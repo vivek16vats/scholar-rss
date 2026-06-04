@@ -113,11 +113,7 @@ print("Saved to scholar_complete.json")
 
 rss_file = "scholar.xml"
 
-profile_url = (
-    f"https://scholar.google.com/citations"
-    f"?hl=en&user={AUTHOR_ID}"
-    f"&view_op=list_works&sortby=pubdate"
-)
+profile_url = "https://scholar.google.com/citations?hl=en&amp;user=TKbYqt0AAAAJ&amp;view_op=list_works&amp;sortby=pubdate"
 
 author_name = author_info.get(
     "name",
