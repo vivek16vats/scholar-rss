@@ -110,45 +110,109 @@ print("Saved to scholar_complete.json")
 # ==========================================================
 # GENERATE RSS XML
 # ==========================================================
+# ==========================================================
+# GENERATE RSS XML
+# ==========================================================
 
 rss_file = "scholar.xml"
 
-profile_url = "https://scholar.google.com/citations?hl=en&amp;user=TKbYqt0AAAAJ&amp;view_op=list_works&amp;sortby=pubdate"
+profile_url = (
+    f"https://scholar.google.com/citations"
+    f"?hl=en&user={AUTHOR_ID}"
+    f"&view_op=list_works&sortby=pubdate"
+)
+
+profile_url_xml = escape(profile_url)
 
 author_name = author_info.get(
     "name",
     "Google Scholar Author"
 )
 
-description_parts = []
+thumbnail = author_info.get(
+    "thumbnail",
+    "https://scholar.google.com/favicon.ico"
+)
 
-if author_info.get("affiliations"):
-    description_parts.append(
-        author_info["affiliations"]
-    )
+# ==========================================================
+# BUILD CHANNEL DESCRIPTION
+# ==========================================================
 
-interests = author_info.get(
+affiliation = author_info.get(
+    "affiliations",
+    ""
+)
+
+interest_titles = []
+
+for interest in author_info.get(
     "interests",
     []
+):
+    if isinstance(interest, dict):
+        interest_titles.append(
+            interest.get("title", "")
+        )
+
+total_citations = ""
+h_index = ""
+i10_index = ""
+
+try:
+
+    stats = citation_info.get(
+        "table",
+        []
+    )
+
+    total_citations = (
+        stats[0]["citations"]["all"]
+    )
+
+    h_index = (
+        stats[1]["h_index"]["all"]
+    )
+
+    i10_index = (
+        stats[2]["i10_index"]["all"]
+    )
+
+except Exception:
+    pass
+
+description_parts = []
+
+if affiliation:
+    description_parts.append(
+        affiliation
+    )
+
+if total_citations != "":
+    description_parts.append(
+        f"Cited by {total_citations}"
+    )
+
+if h_index != "":
+    description_parts.append(
+        f"h-index {h_index}"
+    )
+
+if i10_index != "":
+    description_parts.append(
+        f"i10-index {i10_index}"
+    )
+
+description_parts.extend(
+    interest_titles
 )
-
-if isinstance(interests, list):
-
-    for item in interests[:5]:
-
-        if isinstance(item, dict):
-            description_parts.append(
-                item.get("title", "")
-            )
-
-        else:
-            description_parts.append(
-                str(item)
-            )
 
 channel_description = " - ".join(
-    [x for x in description_parts if x]
+    description_parts
 )
+
+# ==========================================================
+# RSS HEADER
+# ==========================================================
 
 rss_xml = []
 
@@ -176,13 +240,17 @@ rss_xml.append(
 )
 
 rss_xml.append(
-    f"<link>{profile_url}</link>"
+    f"<link>{profile_url_xml}</link>"
 )
+
+# ==========================================================
+# AUTHOR IMAGE
+# ==========================================================
 
 rss_xml.append("<image>")
 
 rss_xml.append(
-    "<url>https://scholar.google.com/favicon.ico</url>"
+    f"<url>{escape(thumbnail)}</url>"
 )
 
 rss_xml.append(
@@ -190,7 +258,7 @@ rss_xml.append(
 )
 
 rss_xml.append(
-    f"<link>{profile_url}</link>"
+    f"<link>{profile_url_xml}</link>"
 )
 
 rss_xml.append("</image>")
@@ -208,7 +276,7 @@ rss_xml.append(
 )
 
 rss_xml.append(
-    f'<atom:link href="{profile_url}" '
+    f'<atom:link href="{profile_url_xml}" '
     'rel="self" '
     'type="application/rss+xml"/>'
 )
@@ -216,7 +284,6 @@ rss_xml.append(
 rss_xml.append(
     "<language><![CDATA[en]]></language>"
 )
-
 # ==========================================================
 # RSS ITEMS
 # ==========================================================
