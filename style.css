@@ -43,6 +43,33 @@ body {
 
   margin-bottom: 10px;
 }
+
+.interest {
+  display: inline-flex;
+  align-items: center;
+  margin: 8px 8px 8px 0;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #e8f0fe;
+  color: #174ea6;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background 0.2s ease, transform 0.15s ease, color 0.2s ease;
+}
+
+.interest:hover,
+.interest:focus-visible {
+  background: #d2e3fc;
+  color: #0b3d91;
+  transform: translateY(-1px);
+}
+
+.interest:focus-visible {
+  outline: 3px solid rgba(66, 133, 244, 0.35);
+  outline-offset: 2px;
+}
+
 .pub-header {
 
     display: flex;
