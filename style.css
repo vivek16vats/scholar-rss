@@ -1,13 +1,13 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: initial;
 
-  max-width: 1000px;
+  max-width: 700px;
 
   margin: auto;
 
   padding: 25px;
 
-  color: #202124;
+  color: rgb(0, 0, 0);
 }
 
 .profile {
@@ -88,6 +88,158 @@ body {
     font-size: 15px;
 
     font-weight: 500;
+}
+
+.carousel-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+    border: 1px solid #d6d6d6;
+    background: #ffffff;
+    padding: 16px 0;
+}
+
+.carousel-track {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.carousel-page {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    flex: 0 0 100%;
+    min-width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+.carousel-card {
+    flex: 0 0 calc((100% - (var(--items, 4) - 1) * 16px) / var(--items, 4));
+    min-width: 0;
+    max-width: calc((100% - (var(--items, 4) - 1) * 16px) / var(--items, 4));
+    border-radius: 16px;
+    border: 1px solid #e0e0e0;
+    background: #f8f9ff;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: rgba(255, 255, 255, 0.92);
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    font-weight: 700;
+    display: grid;
+    place-items: center;
+    transition: transform 0.15s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.carousel-button:hover,
+.carousel-button:focus-visible {
+    background: rgba(255, 255, 255, 1);
+    transform: translateY(-50%) scale(1.05);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+.carousel-button:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-button-prev {
+    left: 8px;
+}
+
+.carousel-button-next {
+    right: 8px;
+}
+
+.carousel-card-title a {
+    color: #0000ff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.carousel-card-title a:hover {
+    text-decoration: underline;
+}
+
+.carousel-card-meta {
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.carousel-card-meta.secondary {
+    color: rgba(0, 0, 0, 0.55);
+}
+
+.carousel-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 18px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.carousel-card-year {
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+
+.carousel-card-citations {
+    color: #0000ff;
+    font-weight: 700;
+}
+
+.carousel-pager {
+    margin-top: 18px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.carousel-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    background: #d6d6d6;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.carousel-dot:hover,
+.carousel-dot:focus-visible {
+    background: #0000ff;
+    transform: scale(1.1);
+}
+
+.carousel-dot.active {
+    background: #0000ff;
+}
+
+.carousel-empty {
+    padding: 40px 0;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
 }
 
 .sort-controls {
