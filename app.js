@@ -34,9 +34,14 @@ function renderProfile(data) {
 
   interests.forEach((item) => {
     interestsHtml += `
-      <span class="interest">
+      <a
+        class="interest"
+        href="${item.link || "#"}"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         ${item.title}
-      </span>
+      </a>
     `;
   });
 
