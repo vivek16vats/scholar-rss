@@ -1,13 +1,29 @@
+html {
+  overflow-x: hidden;
+  width: 100%;
+  height: auto;
+}
+
 body {
   font-family: initial;
 
-  max-width: 700px;
+  max-width: 100%;
+  width: 100%;
 
-  margin: auto;
+  margin: 0 auto;
 
   padding: 25px;
 
   color: rgb(0, 0, 0);
+
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+@media (max-width: 599px) {
+  body {
+    padding: 16px 12px;
+  }
 }
 
 .profile {
@@ -71,22 +87,14 @@ body {
 }
 
 .pub-header {
-
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
-
-    margin-bottom: 25px;
 }
 
 .pub-count {
-
     color: #5f6368;
-
     font-size: 15px;
-
     font-weight: 500;
 }
 
@@ -97,12 +105,24 @@ body {
     border: 1px solid #d6d6d6;
     background: #ffffff;
     padding: 16px 0;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: auto;
+}
+
+@media (max-width: 599px) {
+  .carousel-wrapper {
+    padding: 12px 0;
+    border-radius: 12px;
+  }
 }
 
 .carousel-track {
     display: flex;
     width: 100%;
     transition: transform 0.5s ease;
+    box-sizing: border-box;
 }
 
 .carousel-page {
@@ -111,8 +131,16 @@ body {
     gap: 16px;
     flex: 0 0 100%;
     min-width: 100%;
+    max-width: 100%;
     padding: 0 16px;
     box-sizing: border-box;
+}
+
+@media (max-width: 599px) {
+  .carousel-page {
+    gap: 12px;
+    padding: 0 12px;
+  }
 }
 
 .carousel-card {
@@ -129,22 +157,38 @@ body {
     box-sizing: border-box;
 }
 
+@media (max-width: 599px) {
+  .carousel-card {
+    padding: 12px;
+    border-radius: 12px;
+  }
+}
+
 .carousel-button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     z-index: 2;
-    width: 42px;
-    height: 42px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.08);
     background: rgba(255, 255, 255, 0.92);
     color: rgba(0, 0, 0, 0.8);
     cursor: pointer;
-    font-weight: 700;
+    font-weight: 500;
+    opacity: 0.8;
     display: grid;
     place-items: center;
     transition: transform 0.15s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+@media (max-width: 599px) {
+  .carousel-button {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
 }
 
 .carousel-button:hover,
@@ -160,11 +204,11 @@ body {
 }
 
 .carousel-button-prev {
-    left: 8px;
+    left: 1px;
 }
 
 .carousel-button-next {
-    right: 8px;
+    right: 1px;
 }
 
 .carousel-card-title a {
@@ -173,6 +217,8 @@ body {
     font-size: 15px;
     font-weight: 700;
     line-height: 1.4;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .carousel-card-title a:hover {
@@ -183,6 +229,8 @@ body {
     color: rgba(0, 0, 0, 0.75);
     font-size: 13px;
     margin-top: 10px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .carousel-card-meta.secondary {
