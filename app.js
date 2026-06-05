@@ -2,11 +2,17 @@ let scholarData = null;
 let carouselPage = 0;
 let carouselTimer = null;
 let currentVisibleCount = 0;
-const TOP_RESULTS = 10;
-const AUTO_PLAY_MS = 3000;
+const TOP_RESULTS_MOBILE = 6;
+const TOP_RESULTS_DESKTOP = 10;
+const AUTO_PLAY_MS = 2500;
 
 fetch("scholar_complete.json")
-  .then((response) => response.json())
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    return response.json();
+  })
   .then((data) => {
     scholarData = data;
 
@@ -15,8 +21,8 @@ fetch("scholar_complete.json")
     startAutoPlay();
   })
   .catch((error) => {
-    console.error(error);
-    document.body.innerHTML = "<h2>Failed to load publication data.</h2>";
+    console.error("Failed to load data:", error);
+    document.body.innerHTML = `<h2>Failed to load publication data.</h2><p>${error.message}</p>`;
   });
 
 function initializeControls() {
@@ -56,8 +62,12 @@ function getVisibleCount() {
   const width = window.innerWidth;
   if (width < 600) return 1;
   if (width < 900) return 2;
-  if (width < 1200) return 3;
-  return 4;
+  return 3;
+}
+
+function getTopResults() {
+  const width = window.innerWidth;
+  return width < 600 ? TOP_RESULTS_MOBILE : TOP_RESULTS_DESKTOP;
 }
 
 function handleResize() {
@@ -71,7 +81,7 @@ function handleResize() {
 function getSortedArticles() {
   return [...(scholarData?.articles || [])]
     .sort((a, b) => Number(b.year || 0) - Number(a.year || 0))
-    .slice(0, TOP_RESULTS);
+    .slice(0, getTopResults());
 }
 
 function renderCarousel() {
@@ -135,7 +145,7 @@ function renderCarousel() {
 function updateCarouselPosition(smooth = true) {
   const track = document.getElementById("carouselTrack");
   const visibleCount = currentVisibleCount || getVisibleCount();
-  const totalPages = Math.max(1, Math.ceil((scholarData?.articles || []).slice(0, TOP_RESULTS).length / visibleCount));
+  const totalPages = Math.max(1, Math.ceil((scholarData?.articles || []).slice(0, getTopResults()).length / visibleCount));
 
   if (carouselPage >= totalPages) {
     carouselPage = 0;
