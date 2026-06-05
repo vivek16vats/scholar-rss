@@ -2,21 +2,16 @@ name: Update Scholar Feed
 
 on:
   schedule:
-    - cron: '0 0 * * *'   # Daily at 00:00 UTC
+    - cron: "0 0 * * *"
 
   workflow_dispatch:
 
 jobs:
   update:
-
     runs-on: ubuntu-latest
 
-    permissions:
-      contents: write
-
     steps:
-
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
       - name: Setup Python
@@ -26,23 +21,21 @@ jobs:
 
       - name: Install packages
         run: |
-          python -m pip install --upgrade pip
           pip install requests
 
-      - name: Run RSS generator
+      - name: Run script
         env:
           SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
         run: |
           python RSS.py
 
-      - name: Commit and push updates
+      - name: Commit updates
         run: |
-          git config user.name "vivek16vats"
-          git config user.email "vivek16vats@gmail.com"
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
 
-          git add scholar.xml
           git add scholar_complete.json
 
-          git diff --staged --quiet || git commit -m "Auto-update Scholar RSS"
+          git diff --staged --quiet || git commit -m "Update Scholar Data"
 
           git push
