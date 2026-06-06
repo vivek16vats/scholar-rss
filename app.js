@@ -4,11 +4,14 @@ let currentVisibleCount = 0;
 let carouselPages = [];
 const TOP_RESULTS_MOBILE = 6;
 const TOP_RESULTS_DESKTOP = 10;
+
 let rafId = null;
 let scrollPos = 0;
 let lastFrameTime = null;
-let autoSpeedPx = 80; // pixels per second
+let autoSpeedPx = 60;
 let halfScrollWidth = 0;
+
+let resumeTimer = null;
 
 fetch("scholar_complete.json")
   .then((response) => {
@@ -34,7 +37,7 @@ function initializeControls() {
 
   publicationsDiv.innerHTML = `
     <div class="pub-header">
-      <h2>Research Feed</h2>
+      <h2 class="pub-title">Research Feed</h2>
     </div>
 
     <div id="carouselWrapper" class="carousel-wrapper">
@@ -56,64 +59,88 @@ function initializeControls() {
     // Button handlers will be attached in renderCarousel
   }
 
-  const wrapper = document.getElementById("carouselWrapper");
-  wrapper.addEventListener("mouseenter", stopAutoPlay);
-  wrapper.addEventListener("mouseleave", startAutoPlay);
-  // Mobile / touch support: detect horizontal swipes (mobile only)
-  // swipe left -> next, swipe right -> prev
-  let touchStartX = null;
-  let touchStartTime = 0;
-  const SWIPE_THRESHOLD = 40; // px
-  const SWIPE_MAX_TIME = 600; // ms
+ const wrapper = document.getElementById("carouselWrapper");
 
-  wrapper.addEventListener("touchstart", (e) => {
+wrapper.addEventListener("mouseenter", stopAutoPlay);
+wrapper.addEventListener("mouseleave", scheduleAutoPlayResume);
+
+let touchStartX = null;
+let touchStartY = null;
+let touchStartTime = 0;
+
+const SWIPE_THRESHOLD = 50;
+const SWIPE_MAX_TIME = 600;
+
+wrapper.addEventListener(
+  "touchstart",
+  (e) => {
     stopAutoPlay();
-    if (e.touches && e.touches.length === 1) {
+
+    if (e.touches.length === 1) {
       touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
       touchStartTime = Date.now();
-    } else {
-      touchStartX = null;
     }
-  }, { passive: true });
+  },
+  { passive: true }
+);
 
-  wrapper.addEventListener("touchmove", (e) => {
-    // no-op: we don't prevent default so page can still scroll vertically
-  }, { passive: true });
+wrapper.addEventListener(
+  "touchend",
+  (e) => {
+    if (touchStartX === null) {
+      scheduleAutoPlayResume();
+      return;
+    }
 
-  wrapper.addEventListener("touchend", (e) => {
-    if (touchStartX !== null && window.innerWidth < 600) {
-      const touch = e.changedTouches && e.changedTouches[0];
-      if (touch) {
-        const dx = touch.clientX - touchStartX;
-        const dt = Date.now() - touchStartTime;
-        if (Math.abs(dx) > SWIPE_THRESHOLD && dt < SWIPE_MAX_TIME) {
-          const totalPages = Math.max(1, carouselPages.length);
-          if (dx > 0) {
-            goToPage((carouselPage - 1 + totalPages) % totalPages);
-          } else {
-            goToPage((carouselPage + 1) % totalPages);
-          }
-        }
+    const touch = e.changedTouches[0];
+
+    const dx = touch.clientX - touchStartX;
+    const dy = touch.clientY - touchStartY;
+    const dt = Date.now() - touchStartTime;
+
+    const totalPages = Math.max(1, carouselPages.length);
+
+    if (
+      Math.abs(dx) > SWIPE_THRESHOLD &&
+      Math.abs(dx) > Math.abs(dy) &&
+      dt < SWIPE_MAX_TIME
+    ) {
+      if (dx > 0) {
+        goToPage((carouselPage - 1 + totalPages) % totalPages);
+      } else {
+        goToPage((carouselPage + 1) % totalPages);
       }
     }
-    touchStartX = null;
-    setTimeout(() => startAutoPlay(), 150);
-  }, { passive: true });
 
-  wrapper.addEventListener("touchcancel", () => {
     touchStartX = null;
-    startAutoPlay();
-  }, { passive: true });
-  // Pointer events for broader device support (ignore if target is a button)
-  wrapper.addEventListener("pointerdown", (e) => {
-    if (e.target.tagName !== 'BUTTON') stopAutoPlay();
-  });
-  wrapper.addEventListener("pointerup", (e) => {
-    if (e.target.tagName !== 'BUTTON') {
-      setTimeout(() => startAutoPlay(), 150);
-    }
-  });
-  wrapper.addEventListener("pointercancel", () => startAutoPlay());
+    scheduleAutoPlayResume();
+  },
+  { passive: true }
+);
+
+wrapper.addEventListener(
+  "touchcancel",
+  () => {
+    touchStartX = null;
+    scheduleAutoPlayResume();
+  },
+  { passive: true }
+);
+
+wrapper.addEventListener("pointerdown", (e) => {
+  if (!e.target.closest("button")) {
+    stopAutoPlay();
+  }
+});
+
+wrapper.addEventListener("pointerup", () => {
+  scheduleAutoPlayResume();
+});
+
+wrapper.addEventListener("pointercancel", () => {
+  scheduleAutoPlayResume();
+});
 
   currentVisibleCount = getVisibleCount();
   window.addEventListener("resize", handleResize);
@@ -130,7 +157,13 @@ function getTopResults() {
   const width = window.innerWidth;
   return width < 600 ? TOP_RESULTS_MOBILE : TOP_RESULTS_DESKTOP;
 }
+function scheduleAutoPlayResume() {
+  clearTimeout(resumeTimer);
 
+  resumeTimer = setTimeout(() => {
+    startAutoPlay();
+  }, 1000);
+}
 function handleResize() {
   const nextCount = getVisibleCount();
   if (nextCount !== currentVisibleCount) {
@@ -312,11 +345,12 @@ function updatePagerActiveState() {
 
 function goToPage(pageNum) {
   carouselPage = pageNum;
+
   stopAutoPlay();
+
   updateCarouselPosition(true, 700);
-  setTimeout(() => {
-    startAutoPlay();
-  }, 740);
+
+  scheduleAutoPlayResume();
 }
 
 function renderPager(totalPages) {
@@ -334,8 +368,12 @@ function renderPager(totalPages) {
 }
 
 function startAutoPlay() {
+  clearTimeout(resumeTimer);
+
   if (rafId) return;
+
   lastFrameTime = null;
+
   rafId = requestAnimationFrame(animate);
 }
 
@@ -381,5 +419,5 @@ function getComputedTranslateX(el) {
 }
 
 window.addEventListener("beforeunload", () => {
-  pauseAutoPlay();
+  stopAutoPlay();
 });
