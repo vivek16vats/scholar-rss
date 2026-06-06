@@ -1,10 +1,14 @@
 let scholarData = null;
 let carouselPage = 0;
-let carouselTimer = null;
 let currentVisibleCount = 0;
+let carouselPages = [];
 const TOP_RESULTS_MOBILE = 6;
 const TOP_RESULTS_DESKTOP = 10;
-const AUTO_PLAY_MS = 2500;
+let rafId = null;
+let scrollPos = 0;
+let lastFrameTime = null;
+let autoSpeedPx = 80; // pixels per second
+let halfScrollWidth = 0;
 
 fetch("scholar_complete.json")
   .then((response) => {
@@ -42,17 +46,74 @@ function initializeControls() {
     <div id="carouselPager" class="carousel-pager"></div>
   `;
 
-  document
-    .getElementById("carouselPrev")
-    .addEventListener("click", () => navigateCarousel(-1));
+  const prevBtn = document.getElementById("carouselPrev");
+  if (prevBtn) {
+    // Button handlers will be attached in renderCarousel
+  }
 
-  document
-    .getElementById("carouselNext")
-    .addEventListener("click", () => navigateCarousel(1));
+  const nextBtn = document.getElementById("carouselNext");
+  if (nextBtn) {
+    // Button handlers will be attached in renderCarousel
+  }
 
   const wrapper = document.getElementById("carouselWrapper");
-  wrapper.addEventListener("mouseenter", pauseAutoPlay);
+  wrapper.addEventListener("mouseenter", stopAutoPlay);
   wrapper.addEventListener("mouseleave", startAutoPlay);
+  // Mobile / touch support: detect horizontal swipes (mobile only)
+  // swipe left -> next, swipe right -> prev
+  let touchStartX = null;
+  let touchStartTime = 0;
+  const SWIPE_THRESHOLD = 40; // px
+  const SWIPE_MAX_TIME = 600; // ms
+
+  wrapper.addEventListener("touchstart", (e) => {
+    stopAutoPlay();
+    if (e.touches && e.touches.length === 1) {
+      touchStartX = e.touches[0].clientX;
+      touchStartTime = Date.now();
+    } else {
+      touchStartX = null;
+    }
+  }, { passive: true });
+
+  wrapper.addEventListener("touchmove", (e) => {
+    // no-op: we don't prevent default so page can still scroll vertically
+  }, { passive: true });
+
+  wrapper.addEventListener("touchend", (e) => {
+    if (touchStartX !== null && window.innerWidth < 600) {
+      const touch = e.changedTouches && e.changedTouches[0];
+      if (touch) {
+        const dx = touch.clientX - touchStartX;
+        const dt = Date.now() - touchStartTime;
+        if (Math.abs(dx) > SWIPE_THRESHOLD && dt < SWIPE_MAX_TIME) {
+          const totalPages = Math.max(1, carouselPages.length);
+          if (dx > 0) {
+            goToPage((carouselPage - 1 + totalPages) % totalPages);
+          } else {
+            goToPage((carouselPage + 1) % totalPages);
+          }
+        }
+      }
+    }
+    touchStartX = null;
+    setTimeout(() => startAutoPlay(), 150);
+  }, { passive: true });
+
+  wrapper.addEventListener("touchcancel", () => {
+    touchStartX = null;
+    startAutoPlay();
+  }, { passive: true });
+  // Pointer events for broader device support (ignore if target is a button)
+  wrapper.addEventListener("pointerdown", (e) => {
+    if (e.target.tagName !== 'BUTTON') stopAutoPlay();
+  });
+  wrapper.addEventListener("pointerup", (e) => {
+    if (e.target.tagName !== 'BUTTON') {
+      setTimeout(() => startAutoPlay(), 150);
+    }
+  });
+  wrapper.addEventListener("pointercancel", () => startAutoPlay());
 
   currentVisibleCount = getVisibleCount();
   window.addEventListener("resize", handleResize);
@@ -90,26 +151,24 @@ function renderCarousel() {
   if (!articles.length) {
     document.getElementById("carouselTrack").innerHTML = `<div class="carousel-empty">No research feed items available.</div>`;
     document.getElementById("carouselPager").innerHTML = "";
+    carouselPages = [];
     return;
   }
 
   const visibleCount = currentVisibleCount || getVisibleCount();
-  const pages = [];
+  carouselPages = [];
   for (let i = 0; i < articles.length; i += visibleCount) {
-    pages.push(articles.slice(i, i + visibleCount));
+    carouselPages.push(articles.slice(i, i + visibleCount));
   }
 
-  if (carouselPage >= pages.length) {
+  if (carouselPage >= carouselPages.length) {
     carouselPage = 0;
   }
 
-  const trackHtml = pages
+  const trackHtml = carouselPages
     .map((page) => {
       const cards = page
         .map((article) => {
-          const citations = article.cited_by?.value || 0;
-          const year = article.year || "";
-
           return `
             <div class="carousel-card">
               <div class="carousel-card-title">
@@ -123,10 +182,6 @@ function renderCarousel() {
               <div class="carousel-card-meta secondary">
                 ${article.publication || ""}
               </div>
-              <div class="carousel-card-footer">
-                <span class="carousel-card-year">${year}</span>
-                ${citations > 0 ? `<span class="carousel-card-citations">${citations} Citation${citations === 1 ? "" : "s"}</span>` : ""}
-              </div>
             </div>
           `;
         })
@@ -138,21 +193,130 @@ function renderCarousel() {
 
   const track = document.getElementById("carouselTrack");
   track.innerHTML = trackHtml;
-  renderPager(pages.length);
+  // Duplicate content for seamless infinite scrolling
+  track.innerHTML += trackHtml;
+  // reset transform and measurement
+  track.style.transition = "none";
+  track.style.transform = `translateX(0px)`;
+  scrollPos = 0;
+  lastFrameTime = null;
+  // compute half width based on wrapper width to avoid gaps
+  requestAnimationFrame(() => {
+    const wrapper = document.getElementById("carouselWrapper");
+    const wrapperW = wrapper ? wrapper.clientWidth : 0;
+    halfScrollWidth = (wrapperW * carouselPages.length) || (track.scrollWidth / 2) || 0;
+  });
+  const totalPages = Math.max(1, carouselPages.length);
+  // render pager only when there is more than one page
+  if (totalPages > 1) {
+    renderPager(carouselPages.length);
+  } else {
+    const pagerEl = document.getElementById('carouselPager');
+    if (pagerEl) pagerEl.innerHTML = '';
+  }
+  
+  // Attach button handlers with same logic as dots
+  const prevBtn = document.getElementById("carouselPrev");
+  const nextBtn = document.getElementById("carouselNext");
+  
+  if (prevBtn) {
+    const newPrev = prevBtn.cloneNode(true);
+    prevBtn.parentNode.replaceChild(newPrev, prevBtn);
+    if (totalPages > 1) {
+      newPrev.addEventListener("click", (e) => {
+        e.stopPropagation();
+        goToPage((carouselPage - 1 + totalPages) % totalPages);
+      });
+      newPrev.removeAttribute('disabled');
+      newPrev.style.display = '';
+    } else {
+      newPrev.setAttribute('disabled', '');
+      newPrev.style.display = 'none';
+    }
+  }
+  
+  if (nextBtn) {
+    const newNext = nextBtn.cloneNode(true);
+    nextBtn.parentNode.replaceChild(newNext, nextBtn);
+    if (totalPages > 1) {
+      newNext.addEventListener("click", (e) => {
+        e.stopPropagation();
+        goToPage((carouselPage + 1) % totalPages);
+      });
+      newNext.removeAttribute('disabled');
+      newNext.style.display = '';
+    } else {
+      newNext.setAttribute('disabled', '');
+      newNext.style.display = 'none';
+    }
+  }
+  
   updateCarouselPosition(false);
 }
 
-function updateCarouselPosition(smooth = true) {
+function updateCarouselPosition(smooth = true, duration = 500) {
   const track = document.getElementById("carouselTrack");
   const visibleCount = currentVisibleCount || getVisibleCount();
-  const totalPages = Math.max(1, Math.ceil((scholarData?.articles || []).slice(0, getTopResults()).length / visibleCount));
+  const totalPages = Math.max(1, carouselPages.length);
 
   if (carouselPage >= totalPages) {
     carouselPage = 0;
   }
 
-  track.style.transform = `translateX(-${carouselPage * 100}%)`;
-  track.style.transition = smooth ? "transform 0.5s ease" : "none";
+  // when manually updating position, jump to the page offset
+  const wrapper = document.getElementById("carouselWrapper");
+  const pageOffset = (wrapper ? wrapper.clientWidth : track.clientWidth) * carouselPage;
+  track.style.transition = smooth ? `transform ${duration}ms ease` : "none";
+  track.style.transform = `translateX(-${pageOffset}px)`;
+  // sync the continuous scroll position to the page after transition
+  if (smooth) {
+    setTimeout(() => {
+      track.style.transition = "none";
+      scrollPos = pageOffset % (halfScrollWidth || pageOffset || 1);
+      track.style.transform = `translateX(-${scrollPos}px)`;
+    }, duration + 20);
+  } else {
+    scrollPos = pageOffset % (halfScrollWidth || pageOffset || 1);
+  }
+  updatePagerActiveState();
+}
+
+function animate(timestamp) {
+  const track = document.getElementById("carouselTrack");
+  if (!track || !halfScrollWidth) {
+    rafId = requestAnimationFrame(animate);
+    return;
+  }
+
+  if (lastFrameTime === null) lastFrameTime = timestamp;
+  const delta = timestamp - lastFrameTime;
+  lastFrameTime = timestamp;
+
+  scrollPos += (autoSpeedPx * delta) / 1000;
+  if (scrollPos >= halfScrollWidth) {
+    scrollPos -= halfScrollWidth;
+  }
+
+  track.style.transition = "none";
+  track.style.transform = `translateX(-${Math.round(scrollPos)}px)`;
+  rafId = requestAnimationFrame(animate);
+}
+
+function updatePagerActiveState() {
+  const pager = document.getElementById("carouselPager");
+  pager.querySelectorAll("button").forEach((button) => {
+    const page = Number(button.dataset.page);
+    button.classList.toggle("active", page === carouselPage);
+  });
+}
+
+function goToPage(pageNum) {
+  carouselPage = pageNum;
+  stopAutoPlay();
+  updateCarouselPosition(true, 700);
+  setTimeout(() => {
+    startAutoPlay();
+  }, 740);
 }
 
 function renderPager(totalPages) {
@@ -164,43 +328,56 @@ function renderPager(totalPages) {
   pager.innerHTML = dots;
   pager.querySelectorAll("button").forEach((button) => {
     button.addEventListener("click", () => {
-      carouselPage = Number(button.dataset.page);
-      renderCarousel();
-      restartAutoPlay();
+      goToPage(Number(button.dataset.page));
     });
   });
 }
 
-function navigateCarousel(direction) {
-  const visibleCount = currentVisibleCount || getVisibleCount();
-  const articles = getSortedArticles();
-  const totalPages = Math.max(1, Math.ceil(articles.length / visibleCount));
-
-  carouselPage = (carouselPage + direction + totalPages) % totalPages;
-  renderCarousel();
-  restartAutoPlay();
-}
-
 function startAutoPlay() {
-  if (carouselTimer) {
-    return;
-  }
-
-  carouselTimer = setInterval(() => {
-    navigateCarousel(1);
-  }, AUTO_PLAY_MS);
+  if (rafId) return;
+  lastFrameTime = null;
+  rafId = requestAnimationFrame(animate);
 }
 
-function pauseAutoPlay() {
-  if (carouselTimer) {
-    clearInterval(carouselTimer);
-    carouselTimer = null;
+
+
+function stopAutoPlay() {
+  const track = document.getElementById('carouselTrack');
+  if (rafId) {
+    cancelAnimationFrame(rafId);
+    rafId = null;
   }
+  // fix current visual position by reading computed transform and applying it inline
+  if (track) {
+    const computedX = getComputedTranslateX(track);
+    track.style.transition = 'none';
+    track.style.transform = `translateX(${Math.round(computedX)}px)`;
+    // force reflow so next transition will animate from this inline transform
+    // eslint-disable-next-line no-unused-expressions
+    track.getBoundingClientRect();
+    // normalize scrollPos for further calculations
+    if (halfScrollWidth) {
+      scrollPos = ((-computedX) % halfScrollWidth + halfScrollWidth) % halfScrollWidth;
+    }
+  }
+  lastFrameTime = null;
 }
 
-function restartAutoPlay() {
-  pauseAutoPlay();
-  startAutoPlay();
+function getComputedTranslateX(el) {
+  if (!el) return 0;
+  const style = window.getComputedStyle(el);
+  const transform = style.transform || 'none';
+  if (transform === 'none') return 0;
+  const m = transform.match(/matrix\(([^,]+),[^,]+,[^,]+,[^,]+,([^,]+),[^)]+\)/);
+  if (m) {
+    return parseFloat(m[2]);
+  }
+  const m3 = transform.match(/matrix3d\(([^)]+)\)/);
+  if (m3) {
+    const parts = m3[1].split(',').map(Number);
+    return parts[12] || 0;
+  }
+  return 0;
 }
 
 window.addEventListener("beforeunload", () => {
