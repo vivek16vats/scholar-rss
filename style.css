@@ -92,12 +92,6 @@ body {
     align-items: center;
 }
 
-.pub-count {
-    color: #5f6368;
-    font-size: 15px;
-    font-weight: 500;
-}
-
 .carousel-wrapper {
     position: relative;
     overflow: hidden;
@@ -235,25 +229,6 @@ body {
 
 .carousel-card-meta.secondary {
     color: rgba(0, 0, 0, 0.55);
-}
-
-.carousel-card-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 18px;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.carousel-card-year {
-    font-weight: 700;
-    color: rgb(0, 0, 0);
-}
-
-.carousel-card-citations {
-    color: #0000ff;
-    font-weight: 700;
 }
 
 .carousel-pager {
