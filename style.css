@@ -23,6 +23,7 @@ body {
     font-size: 20px;
     margin-top: 0;
     color: #0000ff;
+    font-weight: 400;
 }
 
 
@@ -43,14 +44,6 @@ body {
   object-fit: cover;
 }
 
-.name {
-  font-size: 32px;
-
-  font-weight: 600;
-
-  margin-bottom: 8px;
-}
-
 .affiliation {
   color: #555;
 
@@ -67,7 +60,7 @@ body {
   color: #174ea6;
   text-decoration: none;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 400;
   transition: background 0.2s ease, transform 0.15s ease, color 0.2s ease;
 }
 
@@ -207,7 +200,7 @@ body {
     color: #0000ff;
     text-decoration: none;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 1.4;
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -218,15 +211,17 @@ body {
 }
 
 .carousel-card-meta {
-    color: rgba(0, 0, 0, 0.75);
+    /* color: rgba(0, 0, 0, 0.75); */
+    color: #188038;
     font-size: 13px;
     margin-top: 10px;
     word-wrap: break-word;
+    font-weight: 500;
     overflow-wrap: break-word;
 }
 
 .carousel-card-meta.secondary {
-    color: rgba(0, 0, 0, 0.55);
+     color: #444;
 }
 
 .carousel-pager {
@@ -268,76 +263,6 @@ body {
     font-weight: 600;
 }
 
-.sort-controls {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 12px;
-
-    flex-wrap: wrap;
-
-    font-size: 14px;
-
-    color: #3c4043;
-}
-
-.sort-button {
-
-    padding: 10px 16px;
-
-    border-radius: 999px;
-
-    border: 1px solid #dadce0;
-
-    background: #ffffff;
-
-    color: #202124;
-
-    cursor: pointer;
-
-    font-weight: 600;
-
-    transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.15s ease;
-}
-
-.sort-button:not(.active):hover {
-
-    background: #f8fbff;
-
-    border-color: #c6daf9;
-}
-
-.sort-button.active {
-
-    background: #174ea6;
-
-    border-color: #174ea6;
-
-    color: white;
-}
-
-.sort-button:focus {
-
-    outline: 3px solid rgba(66, 133, 244, 0.35);
-
-    outline-offset: 2px;
-}
-
-#sortSelect {
-
-    padding: 8px 12px;
-
-    border-radius: 6px;
-
-    border: 1px solid #dadce0;
-
-    background: white;
-
-    cursor: pointer;
-}
-
 .paper {
 
     display: flex;
@@ -376,7 +301,7 @@ body {
 
 .paper-title a {
 
-    color: #174ea6;
+   color: #174EA6;
 
     text-decoration: none;
 
@@ -394,7 +319,7 @@ body {
 
 .paper-authors {
 
-    color: #137333;
+    color: #188038;
 
     font-size: 14px;
 
@@ -405,7 +330,7 @@ body {
 
 .paper-publication {
 
-    color: #3c4043;
+    color: #444;
 
     font-size: 14px;
 }
