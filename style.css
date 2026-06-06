@@ -22,17 +22,18 @@ body {
 
 @media (max-width: 599px) {
   body {
-    padding: 16px 12px;
+    padding: 8px;
+  }
+  .pub-title {
+    font-size: 20px;
   }
 }
 
+
 .profile {
   display: flex;
-
   gap: 24px;
-
   margin-bottom: 40px;
-
   align-items: center;
 }
 
@@ -103,6 +104,7 @@ body {
     max-width: 100%;
     box-sizing: border-box;
     -webkit-overflow-scrolling: auto;
+    touch-action: pan-y;
 }
 
 @media (max-width: 599px) {
@@ -126,7 +128,7 @@ body {
     flex: 0 0 100%;
     min-width: 100%;
     max-width: 100%;
-    padding: 0 16px;
+    padding: 0 8px;
     box-sizing: border-box;
 }
 
@@ -232,10 +234,15 @@ body {
 }
 
 .carousel-pager {
-    margin-top: 18px;
+    margin-top: 16px;
     display: flex;
     justify-content: center;
     gap: 8px;
+
+    @media (max-width: 599px) {
+        margin-top: 12px;
+        gap: 6px;
+    }
 }
 
 .carousel-dot {
@@ -425,4 +432,10 @@ body {
     font-size: 18px;
 
     font-weight: 700;
+}
+.carousel-wrapper,
+.carousel-track,
+.carousel-card {
+  user-select: none;
+  -webkit-user-select: none;
 }
