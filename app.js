@@ -25,7 +25,8 @@ fetch("scholar_complete.json")
 
     initializeControls();
     renderCarousel();
-    startAutoPlay();
+    // Delay starting the infinite autoplay by 1.5 seconds on initial load
+    setTimeout(startAutoPlay, 1500);
   })
   .catch((error) => {
     console.error("Failed to load data:", error);
@@ -157,12 +158,12 @@ function getTopResults() {
   const width = window.innerWidth;
   return width < 600 ? TOP_RESULTS_MOBILE : TOP_RESULTS_DESKTOP;
 }
-function scheduleAutoPlayResume() {
+function scheduleAutoPlayResume(timeout = 2000) {
   clearTimeout(resumeTimer);
 
   resumeTimer = setTimeout(() => {
     startAutoPlay();
-  }, 1000);
+  }, timeout);
 }
 function handleResize() {
   const nextCount = getVisibleCount();
@@ -332,6 +333,21 @@ function animate(timestamp) {
 
   track.style.transition = "none";
   track.style.transform = `translateX(-${Math.round(scrollPos)}px)`;
+  // Update the visible pager/dot state based on current scroll position
+  const wrapper = document.getElementById("carouselWrapper");
+  const wrapperW = wrapper ? wrapper.clientWidth : (track.clientWidth || 1);
+  const totalPages = Math.max(1, carouselPages.length);
+  const newPage = Math.floor(scrollPos / (wrapperW || 1)) % totalPages;
+  if (newPage !== carouselPage) {
+    carouselPage = newPage;
+    updatePagerActiveState();
+    // Pause autoplay for a short hold when the visible page changes
+    stopAutoPlay();
+    scheduleAutoPlayResume(2000);
+    // Don't queue the next animation frame while paused
+    return;
+  }
+
   rafId = requestAnimationFrame(animate);
 }
 
