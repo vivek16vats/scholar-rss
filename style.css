@@ -206,13 +206,23 @@ body {
     overflow-wrap: break-word;
 }
 
+.scholar-icon {
+  width: 26px;
+  height: 26px;
+  vertical-align: middle;
+  margin-right: 8px;
+  border-radius: 50%;
+  border: 1px solid #d2d2d2;
+  background-color: #f3f5f6;
+}
+
 .carousel-card-title a:hover {
     text-decoration: underline;
 }
 
 .carousel-card-meta {
     /* color: rgba(0, 0, 0, 0.75); */
-    color: #188038;
+    color: black;
     font-size: 13px;
     margin-top: 10px;
     word-wrap: break-word;
@@ -222,6 +232,8 @@ body {
 
 .carousel-card-meta.secondary {
      color: #444;
+     display: flex;
+     align-items: center;
 }
 
 .carousel-pager {
@@ -319,7 +331,7 @@ body {
 
 .paper-authors {
 
-    color: #188038;
+    color: black;
 
     font-size: 14px;
 
