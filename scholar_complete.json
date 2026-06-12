@@ -76,7 +76,7 @@
       }
     ]
   },
-  "total_articles": 30,
+  "total_articles": 20,
   "articles": [
     {
       "title": "Determinants of circular economy adoption in wastewater treatment plants",
@@ -153,6 +153,17 @@
       "citation_id": "TKbYqt0AAAAJ:IWHjjKOFINEC",
       "authors": "S Mishra, D Sahoo, S Mohapatra, P Mohanty",
       "publication": "Environmental Economics and Policy Studies, 1-28, 2026",
+      "cited_by": {
+        "value": null
+      },
+      "year": "2026"
+    },
+    {
+      "title": "Renewable Energy Transition and Inclusive Green Growth in EMDEs: Evidence From a CS‐ARDL Approach",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:j3f4tGmQtD8C",
+      "citation_id": "TKbYqt0AAAAJ:j3f4tGmQtD8C",
+      "authors": "A Paul, D Sahoo, A Mitra, S Mohapatra",
+      "publication": "Sustainable Development, 2026",
       "cited_by": {
         "value": null
       },
@@ -317,160 +328,6 @@
         "cites_id": "4558674609862128957"
       },
       "year": "2024"
-    },
-    {
-      "title": "Mapping structural break and sectoral movement on female employment in India since 1991",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:YsMSGLbcyi4C",
-      "citation_id": "TKbYqt0AAAAJ:YsMSGLbcyi4C",
-      "authors": "S Mishra, D Sahoo, S Mohapatra",
-      "publication": "Indian Journal of Labour Economics 67, 731–750, 2024",
-      "cited_by": {
-        "value": 3,
-        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11560595305696618503",
-        "serpapi_link": "https://serpapi.com/search.json?cites=11560595305696618503&engine=google_scholar&hl=en",
-        "cites_id": "11560595305696618503"
-      },
-      "year": "2024"
-    },
-    {
-      "title": "Charting the path to a developed India: Viksit Bharat 2047",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&cstart=20&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:IjCSPb-OGe4C",
-      "citation_id": "TKbYqt0AAAAJ:IjCSPb-OGe4C",
-      "authors": "S Mohapatra, S Pohit",
-      "publication": "NCAER Working Paper 167, 2024",
-      "cited_by": {
-        "value": 14,
-        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6619255966019116924",
-        "serpapi_link": "https://serpapi.com/search.json?cites=6619255966019116924&engine=google_scholar&hl=en",
-        "cites_id": "6619255966019116924"
-      },
-      "year": "2024"
-    },
-    {
-      "title": "How climate-included variations in crop yields affect migration in India",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&cstart=20&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:ufrVoPGSRksC",
-      "citation_id": "TKbYqt0AAAAJ:ufrVoPGSRksC",
-      "authors": "S Mohapatra, A Das, D Sahoo, B Sharp, AK Sahoo",
-      "publication": "International Journal of Social Economics 50 (11), 1521-1550, 2023",
-      "cited_by": {
-        "value": 4,
-        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14418335742163999921",
-        "serpapi_link": "https://serpapi.com/search.json?cites=14418335742163999921&engine=google_scholar&hl=en",
-        "cites_id": "14418335742163999921"
-      },
-      "year": "2023"
-    },
-    {
-      "title": "Managing disasters in a compounding scenario: A case of adaptive governance in the state of Odisha, India",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&cstart=20&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:W7OEmFMy1HYC",
-      "citation_id": "TKbYqt0AAAAJ:W7OEmFMy1HYC",
-      "authors": "S Banerjee, S Mohapatra",
-      "publication": "International Journal of Climate Change: Impacts & Responses 16 (1), 107-129, 2023",
-      "cited_by": {
-        "value": 12,
-        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10551444608990529474",
-        "serpapi_link": "https://serpapi.com/search.json?cites=10551444608990529474&engine=google_scholar&hl=en",
-        "cites_id": "10551444608990529474"
-      },
-      "year": "2023"
-    },
-    {
-      "title": "Heterogeneous climate effect on crop yield and associated risks to water security in India",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&cstart=20&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:zYLM7Y9cAGgC",
-      "citation_id": "TKbYqt0AAAAJ:zYLM7Y9cAGgC",
-      "authors": "S Mohapatra, D Sahoo, AK Sahoo, B Sharp, L Wen",
-      "publication": "International Journal of Water Resources Development 40 (3), 345-378, 2023",
-      "cited_by": {
-        "value": 11,
-        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6783269876991984082",
-        "serpapi_link": "https://serpapi.com/search.json?cites=6783269876991984082&engine=google_scholar&hl=en",
-        "cites_id": "6783269876991984082"
-      },
-      "year": "2023"
-    },
-    {
-      "title": "Seasonal weather sensitivity of staple crop rice in South India",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&cstart=20&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:Tyk-4Ss8FVUC",
-      "citation_id": "TKbYqt0AAAAJ:Tyk-4Ss8FVUC",
-      "authors": "S Mohapatra, B Sharp, AK Sahoo, D Sahoo",
-      "publication": "Proceedings of the 2nd International Conference on Water Energy Food and …, 2023",
-      "cited_by": {
-        "value": 1,
-        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=9360409069124290563",
-        "serpapi_link": "https://serpapi.com/search.json?cites=9360409069124290563&engine=google_scholar&hl=en",
-        "cites_id": "9360409069124290563"
-      },
-      "year": "2023"
-    },
-    {
-      "title": "Impact of climate change on Indian agriculture",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&cstart=20&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:L8Ckcad2t8MC",
-      "citation_id": "TKbYqt0AAAAJ:L8Ckcad2t8MC",
-      "authors": "S Mohapatra",
-      "publication": "University of Auckland (Doctoral dissertation), 2023",
-      "cited_by": {
-        "value": 10,
-        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6770903176070999084",
-        "serpapi_link": "https://serpapi.com/search.json?cites=6770903176070999084&engine=google_scholar&hl=en",
-        "cites_id": "6770903176070999084"
-      },
-      "year": "2023"
-    },
-    {
-      "title": "How changes in climate affect crop yields in eastern India",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&cstart=20&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:WF5omc3nYNoC",
-      "citation_id": "TKbYqt0AAAAJ:WF5omc3nYNoC",
-      "authors": "S Mohapatra, B Sharp, D Sahoo",
-      "publication": "Climate Change Economics 13 (2), 2250001, 2022",
-      "cited_by": {
-        "value": 15,
-        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=13470555965583464582,18355820502853136475",
-        "serpapi_link": "https://serpapi.com/search.json?cites=13470555965583464582%2C18355820502853136475&engine=google_scholar&hl=en",
-        "cites_id": "13470555965583464582,18355820502853136475"
-      },
-      "year": "2022"
-    },
-    {
-      "title": "Decomposition of climate-induced productivity growth in Indian agriculture",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&cstart=20&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:eQOLeE2rZwMC",
-      "citation_id": "TKbYqt0AAAAJ:eQOLeE2rZwMC",
-      "authors": "S Mohapatra, B Sharp, AK Sahoo, D Sahoo",
-      "publication": "Environmental Challenges 7, 100494, 2022",
-      "cited_by": {
-        "value": 17,
-        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=13414087166658417539,3680583779762294918",
-        "serpapi_link": "https://serpapi.com/search.json?cites=13414087166658417539%2C3680583779762294918&engine=google_scholar&hl=en",
-        "cites_id": "13414087166658417539,3680583779762294918"
-      },
-      "year": "2022"
-    },
-    {
-      "title": "Gender bias in farm activities: Evidence from household level data of a developing economy",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&cstart=20&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:Y0pCki6q_DkC",
-      "citation_id": "TKbYqt0AAAAJ:Y0pCki6q_DkC",
-      "authors": "D Mohapatra, D Sahoo, S Mohapatra",
-      "publication": "American Journal of Rural Development 7 (1), 30-43, 2019",
-      "cited_by": {
-        "value": 2,
-        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17366406068184417402",
-        "serpapi_link": "https://serpapi.com/search.json?cites=17366406068184417402&engine=google_scholar&hl=en",
-        "cites_id": "17366406068184417402"
-      },
-      "year": "2019"
-    },
-    {
-      "title": "Climate change induced migration in marine fishing community in Odisha",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&cstart=20&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:qxL8FJ1GzNcC",
-      "citation_id": "TKbYqt0AAAAJ:qxL8FJ1GzNcC",
-      "authors": "S Mohapatra",
-      "publication": "Ravenshaw University (Master's thesis), 2018",
-      "cited_by": {
-        "value": 1,
-        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4051139410340739291",
-        "serpapi_link": "https://serpapi.com/search.json?cites=4051139410340739291&engine=google_scholar&hl=en",
-        "cites_id": "4051139410340739291"
-      },
-      "year": "2018"
     }
   ]
 }
