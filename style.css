@@ -10,22 +10,24 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 8px 0;
-  color: rgb(0, 0, 0);
+  color: #000000;
+  background: #ffffff;
   overflow-x: hidden;
   box-sizing: border-box;
+}
 
-  @media (max-width: 599px) {
+@media (max-width: 599px) {
+  body {
     padding: 0 8px 5px;
   }
 }
 
 .pub-title {
-    font-size: 20px;
-    margin-top: 0;
-    color: #0000ff;
-    font-weight: 400;
+  font-size: 20px;
+  margin: 0 0 14px;
+  color: #0000ff;
+  font-weight: 400;
 }
-
 
 .profile {
   display: flex;
@@ -36,17 +38,13 @@ body {
 
 .avatar {
   width: 140px;
-
   height: 140px;
-
   border-radius: 50%;
-
   object-fit: cover;
 }
 
 .affiliation {
   color: #555;
-
   margin-bottom: 10px;
 }
 
@@ -77,95 +75,101 @@ body {
 }
 
 .pub-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .carousel-wrapper {
-    position: relative;
-    overflow: hidden;
-    border-radius: 18px;
-    border: 1px solid #d6d6d6;
-    background: #ffffff;
-    padding: 16px 0;
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-    -webkit-overflow-scrolling: auto;
-    touch-action: pan-y;
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  border: 1px solid #d6d6d6;
+  background: #ffffff;
+  padding: 18px 46px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  touch-action: pan-y;
+  -webkit-overflow-scrolling: auto;
+  box-shadow: none;
+  cursor: grab;
+}
+
+.carousel-wrapper.is-dragging {
+  cursor: grabbing;
+}
+
+.carousel-wrapper.is-dragging .carousel-card {
+  pointer-events: none;
 }
 
 @media (max-width: 599px) {
   .carousel-wrapper {
-    padding: 12px 0;
+    padding: 14px 42px;
     border-radius: 12px;
   }
 }
 
+.carousel-viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
 .carousel-track {
-    display: flex;
-    width: 100%;
-    transition: transform 0.5s ease;
-    box-sizing: border-box;
-}
-
-.carousel-page {
-    display: flex;
-    justify-content: space-between;
-    gap: 16px;
-    flex: 0 0 100%;
-    min-width: 100%;
-    max-width: 100%;
-    padding: 0 8px;
-    box-sizing: border-box;
-}
-
-@media (max-width: 599px) {
-  .carousel-page {
-    gap: 12px;
-    padding: 0 12px;
-  }
+  display: flex;
+  gap: 16px;
+  box-sizing: border-box;
+  transition: transform 0.5s ease;
+  will-change: transform;
 }
 
 .carousel-card {
-    flex: 0 0 calc((100% - (var(--items, 4) - 1) * 16px) / var(--items, 4));
-    min-width: 0;
-    max-width: calc((100% - (var(--items, 4) - 1) * 16px) / var(--items, 4));
-    border-radius: 16px;
-    border: 1px solid #e0e0e0;
-    background: #f8f9ff;
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
+  flex: 0 0 calc((100% - (var(--visible-items, 3) - 1) * 16px) / var(--visible-items, 3));
+  min-width: 0;
+  max-width: calc((100% - (var(--visible-items, 3) - 1) * 16px) / var(--visible-items, 3));
+  border-radius: 16px;
+  border: 1px solid #e0e0e0;
+  background: #f8f9ff;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  min-height: 190px;
+  box-shadow: none;
 }
 
 @media (max-width: 599px) {
   .carousel-card {
     padding: 12px;
     border-radius: 12px;
+    min-height: 175px;
   }
 }
 
 .carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 2;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    background: rgba(255, 255, 255, 0.92);
-    color: rgba(0, 0, 0, 0.8);
-    cursor: pointer;
-    font-weight: 500;
-    opacity: 0.8;
-    display: grid;
-    place-items: center;
-    transition: transform 0.15s ease, background 0.2s ease, box-shadow 0.2s ease;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.92);
+  color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 26px;
+  line-height: 1;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+  pointer-events: auto;
+  touch-action: manipulation;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.2s ease, box-shadow 0.2s ease;
 }
 
 @media (max-width: 599px) {
@@ -178,173 +182,123 @@ body {
 
 .carousel-button:hover,
 .carousel-button:focus-visible {
-    background: rgba(255, 255, 255, 1);
-    transform: translateY(-50%) scale(1.05);
-    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+  color: #000000;
+  transform: translateY(-50%) scale(1.05);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
 }
 
 .carousel-button:focus-visible {
-    outline: none;
-    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1);
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1);
 }
 
 .carousel-button-prev {
-    left: 1px;
+  left: 7px;
 }
 
 .carousel-button-next {
-    right: 1px;
+  right: 7px;
 }
 
 .carousel-card-title a {
-    color: #0000ff;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.4;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-}
-
-.scholar-icon {
-  width: 26px;
-  height: 26px;
-  vertical-align: middle;
-  margin-right: 8px;
-  border-radius: 50%;
-  border: 1px solid #d2d2d2;
-  background-color: #f3f5f6;
+  color: #0000cc;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .carousel-card-title a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-.carousel-card-meta {
-    /* color: rgba(0, 0, 0, 0.75); */
-    color: black;
-    font-size: 13px;
-    margin-top: 10px;
-    word-wrap: break-word;
-    font-weight: 500;
-    overflow-wrap: break-word;
+.carousel-card-authors {
+  color: #212121;
+  font-size: 12px;
+  margin-top: 10px;
+  word-wrap: break-word;
+  font-weight: 400;
+  overflow-wrap: break-word;
 }
 
-.carousel-card-meta.secondary {
-     color: #444;
-     display: flex;
-     align-items: center;
+.carousel-card-publication {
+  color: #9aa0a6;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  margin-top: 10px;
+  word-wrap: break-word;
+  font-weight: 400;
+  overflow-wrap: break-word;
 }
 
-.carousel-pager {
-    margin-top: 16px;
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-
-    @media (max-width: 599px) {
-        margin-top: 12px;
-        gap: 6px;
-    }
-}
-
-.carousel-dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    border: none;
-    background: #d6d6d6;
-    cursor: pointer;
-    transition: background 0.2s ease, transform 0.15s ease;
-}
-
-.carousel-dot:hover,
-.carousel-dot:focus-visible {
-    background: #0000ff;
-    transform: scale(1.1);
-}
-
-.carousel-dot.active {
-    background: #0000ff;
+.scholar-icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  /* border-radius: 50%; */
+  /* border: 1px solid #d2d2d2;
+  background-color: #f3f5f6; */
+  flex: 0 0 auto;
 }
 
 .carousel-empty {
-    padding: 40px 0;
-    text-align: center;
-    color: rgb(0, 0, 0);
-    font-weight: 600;
+  padding: 40px 0;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
 }
 
 .paper {
-
-    display: flex;
-
-    justify-content: space-between;
-
-    gap: 20px;
-
-    padding: 18px;
-
-    margin-bottom: 14px;
-
-    border-radius: 8px;
-
-    background: #fafafa;
-
-    border: 1px solid #e8eaed;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  background: #fafafa;
+  border: 1px solid #e8eaed;
 }
 
 .paper-left {
-
-    flex: 1;
+  flex: 1;
 }
 
 .paper-right {
-
-    min-width: 120px;
-
-    text-align: right;
+  min-width: 120px;
+  text-align: right;
 }
 
 .paper-title {
-
-    margin-bottom: 6px;
+  margin-bottom: 6px;
 }
 
 .paper-title a {
-
-   color: #174EA6;
-
-    text-decoration: none;
-
-    font-size: 18px;
-
-    font-weight: 600;
-
-    line-height: 1.4;
+  color: #174EA6;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
 }
 
 .paper-title a:hover {
-
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .paper-authors {
-
-    color: black;
-
-    font-size: 14px;
-
-    font-weight: 500;
-
-    margin-bottom: 4px;
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 4px;
 }
 
 .paper-publication {
-
-    color: #444;
-
-    font-size: 14px;
+  color: #444;
+  font-size: 14px;
 }
 
 .carousel-wrapper,
