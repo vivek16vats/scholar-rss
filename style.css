@@ -7,12 +7,18 @@ html {
 body {
   font-family: "Lora", serif;
   max-width: 100%;
-  width: 100%;
+  width: auto;
   margin: 0 auto;
-  padding: 8px 0;
+  padding: 8px 16px;
   color: #000000;
   background: #ffffff;
   overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -86,7 +92,7 @@ body {
   border-radius: 18px;
   border: 1px solid #d6d6d6;
   background: #ffffff;
-  padding: 18px 46px;
+  padding: 18px 30px;
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
@@ -106,7 +112,7 @@ body {
 
 @media (max-width: 599px) {
   .carousel-wrapper {
-    padding: 14px 42px;
+    padding: 14px 30px;
     border-radius: 12px;
   }
 }
@@ -153,15 +159,15 @@ body {
   top: 50%;
   transform: translateY(-50%);
   z-index: 2;
-  width: 34px;
-  height: 34px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.08);
   background: rgba(255, 255, 255, 0.92);
   color: rgba(0, 0, 0, 0.8);
   cursor: pointer;
   font-family: Arial, sans-serif;
-  font-size: 26px;
+  font-size: 21px;
   line-height: 1;
   font-weight: 700;
   display: grid;
@@ -174,9 +180,9 @@ body {
 
 @media (max-width: 599px) {
   .carousel-button {
-    width: 36px;
-    height: 36px;
-    font-size: 18px;
+    width: 28px;
+    height: 28px;
+    font-size: 19px;
   }
 }
 
@@ -194,11 +200,11 @@ body {
 }
 
 .carousel-button-prev {
-  left: 7px;
+  left: 2px;
 }
 
 .carousel-button-next {
-  right: 7px;
+  right: 2px;
 }
 
 .carousel-card-title a {
@@ -225,14 +231,14 @@ body {
 }
 
 .carousel-card-publication {
-  color: #9aa0a6;
+  color: #5f6368;
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 11px;
+  font-size: 12px;
   margin-top: 10px;
   word-wrap: break-word;
-  font-weight: 400;
+  font-weight: 500;
   overflow-wrap: break-word;
 }
 
