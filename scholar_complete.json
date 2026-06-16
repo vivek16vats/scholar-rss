@@ -32,8 +32,8 @@
     "table": [
       {
         "citations": {
-          "all": 176,
-          "since_2021": 173
+          "all": 177,
+          "since_2021": 174
         }
       },
       {
@@ -72,7 +72,7 @@
       },
       {
         "year": 2026,
-        "citations": 60
+        "citations": 61
       }
     ]
   },
@@ -295,7 +295,7 @@
       "authors": "S Mishra, D Sahoo, S Mohapatra",
       "publication": "International Journal of Development Issues, 2024",
       "cited_by": {
-        "value": 26,
+        "value": 27,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=18329252979954060620",
         "serpapi_link": "https://serpapi.com/search.json?cites=18329252979954060620&engine=google_scholar&hl=en",
         "cites_id": "18329252979954060620"
