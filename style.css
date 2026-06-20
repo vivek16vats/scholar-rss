@@ -112,7 +112,8 @@ body {
 
 @media (max-width: 599px) {
   .carousel-wrapper {
-    padding: 14px 30px;
+    /* padding: 14px 30px; */
+    padding: 0;
     border-radius: 12px;
   }
 }
@@ -180,9 +181,10 @@ body {
 
 @media (max-width: 599px) {
   .carousel-button {
-    width: 28px;
+    /* width: 28px;
     height: 28px;
-    font-size: 19px;
+    font-size: 19px; */
+    display: none;
   }
 }
 
