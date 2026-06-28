@@ -3,7 +3,7 @@
     "name": "Souryabrata Mohapatra",
     "affiliations": "Assistant Professor, IIT Jodhpur",
     "email": "Verified email at iitj.ac.in",
-    "website": "https://www.iitj.ac.in/People/Profile/0cf4362a-d27d-4390-910f-6e0bc2ff716c",
+    "website": "https://sites.google.com/view/souryabrata",
     "interests": [
       {
         "title": "Applied Economics",
@@ -16,14 +16,19 @@
         "serpapi_link": "https://serpapi.com/search.json?engine=google_scholar_profiles&hl=en&mauthors=label%3Aclimate_change"
       },
       {
-        "title": "Sustainable Agriculture",
-        "link": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:sustainable_agriculture",
-        "serpapi_link": "https://serpapi.com/search.json?engine=google_scholar_profiles&hl=en&mauthors=label%3Asustainable_agriculture"
+        "title": "Agricultural Transformation",
+        "link": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:agricultural_transformation",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_scholar_profiles&hl=en&mauthors=label%3Aagricultural_transformation"
       },
       {
         "title": "Green Transition",
         "link": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:green_transition",
         "serpapi_link": "https://serpapi.com/search.json?engine=google_scholar_profiles&hl=en&mauthors=label%3Agreen_transition"
+      },
+      {
+        "title": "Just Migration",
+        "link": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:just_migration",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_scholar_profiles&hl=en&mauthors=label%3Ajust_migration"
       }
     ],
     "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=TKbYqt0AAAAJ&citpid=17"
