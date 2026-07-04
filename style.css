@@ -233,7 +233,8 @@ body {
 }
 
 .carousel-card-links {
-  margin: 12px 0;
+  position: absolute;
+  top: 40%;
 
   @media (max-width: 599px) {
     display: none;
@@ -275,19 +276,29 @@ body {
   word-wrap: break-word;
   font-weight: 500;
   overflow-wrap: break-word;
+  padding-top: 4px;
+}
+
+.publication-source {
+  color: #444444;
+  line-height: 1.45;
 }
 
 .publication-info {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
+  margin-top: auto;
 }
 
-.carousel-card-publication a {
+.publication-info a {
+  color: #2f2f2f;
   text-decoration: none;
 }
 
-.carousel-card-publication a:hover {
+.publication-info a:hover,
+.publication-info a:focus-visible {
+  color: #1a1a1a;
   text-decoration: underline;
 }
 

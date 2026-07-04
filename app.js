@@ -289,17 +289,6 @@ function createCardMarkup(article) {
 
       <div class="carousel-card-links">
         <a
-          href="https://www.linkedin.com/in/souryabrata"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="icon-link linkedin"
-          aria-label="LinkedIn"
-        >
-          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <path fill="currentColor" d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.24 8.54H4.8V24H.24V8.54zM7.7 8.54H12.1V11.1H12.18C12.94 9.68 14.78 8.58 17.06 8.58 21.1 8.58 24 11.04 24 16.1V24H19.44V16.96C19.44 14.9 18.88 13.4 16.9 13.4 14.9 13.4 14.38 15.06 14.38 16.86V24H9.82V8.54H7.7z"/>
-          </svg>
-        </a>
-        <a
           href="mailto:?subject=${encodeURIComponent("Interesting paper: " + article.title)}&body=${encodeURIComponent(article.link || "")}
           "
           class="icon-link gmail"
@@ -312,22 +301,20 @@ function createCardMarkup(article) {
       </div>
 
       <div class="carousel-card-publication">
+        <div class="publication-source">
+          ${article.publication ? article.publication : article.year}
+        </div>
         <div class="publication-info">
           <img
             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAsVBMVEVHcEz////O2/X////E1vRzpvpni9Dr8/6rwe9gmfZAhfUzZsFVf8ze6PiavPlWkvY9g/RCh/dLd8mOqNzq8f6IrvJJifU1acM+cMd5mdXk7/3X5fz////I2/wqYr/////p8v+lxPq5zfJvn/L4+/6sxfNkm/dUgdKYsN/1+f+ewf4tfPNdjuGVrd52p/t8rPz9/v/o8P2QuP2Mtf2ixf+gw/+oyP/J3v/o8f/C2f////8srEJGAAAAO3RSTlMADGgeif/5N7X3///4TdL+///+1Wzo////66ivGdz/A0Hhnvovxf//wlL+///9//8jjf///////7P9FQF2P90AAAEWSURBVHgBYiAaAPqiByyJgSiAotW2Hdt2sv+Fze/pWO/k8KY8mU4nQzabL5bzWb+t1pvtbr9e9dnheDpfdrvr7dC1++N53l52r937c28bttlCgNAebxBBns8V7iiy2hbNsBeQEoEfB7o43eO5bSIs/DsxwfE5lQj6WnIwtSBK55xgXWpXsqwISNX0nJ7SYsHzxjtnylQRrWowAuxkWdYCvoX81R1lTmn0nfgEeLKtPFsGvIr5NcKWzk+wUt+7JeeUTzV/SNaizDI+8/rTuZ5fz0X11CCsFagNvIcNvDdHRiMjUaxVpsWoWRLUBiZNox2y1IB0UCuVjP5n1iJSRe1oBk9hV1GKMzTqlq3urntfZag/mm4O+gN/9TJK3hsJ0QAAAABJRU5ErkJggg=="
             alt="Scholar icon"
             class="scholar-icon"
           />
-          <span>
-            <a
-              href="https://scholar.google.com/scholar?q=${scholarQuery}"
-              target="_blank"
-              rel="noopener noreferrer"
-            >scholar.google.com</a>
-          </span>
-        </div>
-        <div class="publication-journal">
-          Journal: ${article.publication ? `${article.publication}` : article.year}
+          <a
+            href="https://scholar.google.com/scholar?q=${scholarQuery}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >scholar.google.com</a>
         </div>
       </div>
     </article>
