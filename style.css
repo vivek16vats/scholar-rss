@@ -143,13 +143,13 @@ body {
   justify-content: flex-start;
   gap: 12px;
   box-sizing: border-box;
-  min-height: 25rem;
+  min-height: 23rem;
   box-shadow: none;
 }
 
 @media (max-width: 599px) {
   .carousel-card {
-    padding: 12px;
+    padding: 7px;
     border-radius: 12px;
     min-height: 175px;
   }
