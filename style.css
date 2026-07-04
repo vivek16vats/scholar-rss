@@ -112,7 +112,7 @@ body {
 
 @media (max-width: 599px) {
   .carousel-wrapper {
-    padding: 8px 10px;
+    padding: 0;
     border-radius: 12px;
   }
 }
@@ -143,34 +143,15 @@ body {
   justify-content: flex-start;
   gap: 12px;
   box-sizing: border-box;
-  min-height: 24rem;
+  min-height: 25rem;
   box-shadow: none;
-}
-
-.carousel-card-top {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.carousel-card-bottom {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: auto;
-}
-
-@media (max-width: 899px) {
-  .carousel-card {
-    min-height: 20rem;
-  }
 }
 
 @media (max-width: 599px) {
   .carousel-card {
     padding: 12px;
     border-radius: 12px;
-    min-height: 18rem;
+    min-height: 175px;
   }
 }
 
@@ -253,6 +234,10 @@ body {
 
 .carousel-card-links {
   margin: 12px 0;
+
+  @media (max-width: 599px) {
+    display: none;
+  }
 }
 
 .icon-link {
@@ -299,7 +284,6 @@ body {
 }
 
 .carousel-card-publication a {
-  color: #0000ff;
   text-decoration: none;
 }
 
