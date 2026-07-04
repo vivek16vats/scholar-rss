@@ -112,8 +112,7 @@ body {
 
 @media (max-width: 599px) {
   .carousel-wrapper {
-    /* padding: 14px 30px; */
-    padding: 0;
+    padding: 8px 10px;
     border-radius: 12px;
   }
 }
@@ -138,20 +137,40 @@ body {
   border-radius: 16px;
   border: 1px solid #e0e0e0;
   background: #f8f9ff;
-  padding: 16px;
+  padding: 18px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 12px;
   box-sizing: border-box;
-  min-height: 190px;
+  min-height: 24rem;
   box-shadow: none;
+}
+
+.carousel-card-top {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.carousel-card-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: auto;
+}
+
+@media (max-width: 899px) {
+  .carousel-card {
+    min-height: 20rem;
+  }
 }
 
 @media (max-width: 599px) {
   .carousel-card {
     padding: 12px;
     border-radius: 12px;
-    min-height: 175px;
+    min-height: 18rem;
   }
 }
 
@@ -225,33 +244,90 @@ body {
 
 .carousel-card-authors {
   color: #212121;
-  font-size: 12px;
-  margin-top: 10px;
+  font-size: 13px;
+  line-height: 1.5;
   word-wrap: break-word;
   font-weight: 400;
   overflow-wrap: break-word;
 }
 
+.carousel-card-links {
+  margin: 12px 0;
+}
+
+.icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.icon-link svg {
+  width: 18px;
+  height: 18px;
+}
+
+.icon-link.linkedin {
+  background: #0a66c2;
+}
+
+.icon-link.gmail {
+  background: #d93025;
+}
+
 .carousel-card-publication {
   color: #5f6368;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   gap: 8px;
-  font-size: 12px;
-  margin-top: 10px;
+  font-size: 13px;
+  margin-top: auto;
   word-wrap: break-word;
   font-weight: 500;
   overflow-wrap: break-word;
 }
 
+.publication-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.carousel-card-publication a {
+  color: #0000ff;
+  text-decoration: none;
+}
+
+.carousel-card-publication a:hover {
+  text-decoration: underline;
+}
+
 .scholar-icon {
   width: 24px;
   height: 24px;
-  vertical-align: middle;
-  /* border-radius: 50%; */
-  /* border: 1px solid #d2d2d2;
-  background-color: #f3f5f6; */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   flex: 0 0 auto;
+  border-radius: 4px;
+  background: #eef2ff;
+  padding: 3px;
+}
+
+.publication-journal {
+  color: #5f6368;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.carousel-card-publication span {
+  display: inline-block;
+  max-width: calc(100% - 32px);
 }
 
 .carousel-empty {
