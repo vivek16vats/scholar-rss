@@ -37,8 +37,8 @@
     "table": [
       {
         "citations": {
-          "all": 181,
-          "since_2021": 178
+          "all": 182,
+          "since_2021": 179
         }
       },
       {
@@ -73,11 +73,11 @@
       },
       {
         "year": 2025,
-        "citations": 74
+        "citations": 73
       },
       {
         "year": 2026,
-        "citations": 65
+        "citations": 67
       }
     ]
   },
@@ -265,7 +265,10 @@
       "authors": "S Mohapatra, A Mitra, S Pohit",
       "publication": "NCAER Working Paper 182, 2025",
       "cited_by": {
-        "value": null
+        "value": 1,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7203661555797690426",
+        "serpapi_link": "https://serpapi.com/search.json?cites=7203661555797690426&engine=google_scholar&hl=en",
+        "cites_id": "7203661555797690426"
       },
       "year": "2025"
     },
