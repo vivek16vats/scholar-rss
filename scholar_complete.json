@@ -37,8 +37,8 @@
     "table": [
       {
         "citations": {
-          "all": 184,
-          "since_2021": 181
+          "all": 185,
+          "since_2021": 182
         }
       },
       {
@@ -77,7 +77,7 @@
       },
       {
         "year": 2026,
-        "citations": 68
+        "citations": 69
       }
     ]
   },
@@ -251,7 +251,7 @@
       "authors": "PK Jena, KR Paltasingh, S Mohapatra, A Mishra",
       "publication": "Bio-Based and Applied Economics 14 (2), 31-49, 2025",
       "cited_by": {
-        "value": 3,
+        "value": 4,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7891397444303179810",
         "serpapi_link": "https://serpapi.com/search.json?cites=7891397444303179810&engine=google_scholar&hl=en",
         "cites_id": "7891397444303179810"
