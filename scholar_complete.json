@@ -37,8 +37,8 @@
     "table": [
       {
         "citations": {
-          "all": 185,
-          "since_2021": 182
+          "all": 186,
+          "since_2021": 183
         }
       },
       {
@@ -77,7 +77,7 @@
       },
       {
         "year": 2026,
-        "citations": 68
+        "citations": 69
       }
     ]
   },
@@ -223,7 +223,7 @@
       "authors": "A Paul, D Sahoo, S Mohapatra, MK Behera",
       "publication": "Journal of Economics and Statistics, 2025",
       "cited_by": {
-        "value": 4,
+        "value": 5,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16714895899479881106",
         "serpapi_link": "https://serpapi.com/search.json?cites=16714895899479881106&engine=google_scholar&hl=en",
         "cites_id": "16714895899479881106"
