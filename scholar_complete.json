@@ -37,8 +37,8 @@
     "table": [
       {
         "citations": {
-          "all": 186,
-          "since_2021": 183
+          "all": 190,
+          "since_2021": 187
         }
       },
       {
@@ -73,11 +73,11 @@
       },
       {
         "year": 2025,
-        "citations": 73
+        "citations": 72
       },
       {
         "year": 2026,
-        "citations": 71
+        "citations": 75
       }
     ]
   },
@@ -89,6 +89,17 @@
       "citation_id": "TKbYqt0AAAAJ:_Qo2XoVZTnwC",
       "authors": "S Mishra, D Sahoo, S Mohapatra",
       "publication": "Current Opinion in Environmental Sustainability 81, 101652, 2026",
+      "cited_by": {
+        "value": null
+      },
+      "year": "2026"
+    },
+    {
+      "title": "Women’s empowerment and economic progress: a longitudinal study of India and China",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:r0BpntZqJG4C",
+      "citation_id": "TKbYqt0AAAAJ:r0BpntZqJG4C",
+      "authors": "S Mishra, D Sahoo, S Mohapatra",
+      "publication": "Review of Social Economy, 1-34, 2026",
       "cited_by": {
         "value": null
       },
@@ -139,17 +150,6 @@
       "year": "2026"
     },
     {
-      "title": "Knowledge and Capacity Barriers to Circular Bioeconomy in Crop Waste Bioenergy Production: A Comparative MCDM Analysis",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:HDshCWvjkbEC",
-      "citation_id": "TKbYqt0AAAAJ:HDshCWvjkbEC",
-      "authors": "S Mishra, D Sahoo, S Mohapatra",
-      "publication": "Australian Journal of Agricultural and Resource Economics 70 (2), 334-351, 2026",
-      "cited_by": {
-        "value": null
-      },
-      "year": "2026"
-    },
-    {
       "title": "Climate and land use dynamics in India’s livestock industry",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:R3hNpaxXUhUC",
       "citation_id": "TKbYqt0AAAAJ:R3hNpaxXUhUC",
@@ -189,6 +189,16 @@
       "year": "2026"
     },
     {
+      "title": "Knowledge and Capacity Barriers to Circular Bioeconomy in Crop Waste Bioenergy Production: A Comparative MCDM Analysis",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:HDshCWvjkbEC",
+      "citation_id": "TKbYqt0AAAAJ:HDshCWvjkbEC",
+      "authors": "S Mishra, D Sahoo, S Mohapatra",
+      "cited_by": {
+        "value": null
+      },
+      "year": "2026"
+    },
+    {
       "title": "Do energy risks drive the renewable transition in the Asia-Pacific? Insights from the method of moments quantile regression",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:ZeXyd9-uunAC",
       "citation_id": "TKbYqt0AAAAJ:ZeXyd9-uunAC",
@@ -223,7 +233,7 @@
       "authors": "A Paul, D Sahoo, S Mohapatra, MK Behera",
       "publication": "Journal of Economics and Statistics, 2025",
       "cited_by": {
-        "value": 5,
+        "value": 6,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16714895899479881106",
         "serpapi_link": "https://serpapi.com/search.json?cites=16714895899479881106&engine=google_scholar&hl=en",
         "cites_id": "16714895899479881106"
@@ -279,7 +289,7 @@
       "authors": "D Sahoo, P Mohanty, S Mishra, MK Behera, S Mohapatra",
       "publication": "Farming System 3 (1), 100124, 2025",
       "cited_by": {
-        "value": 21,
+        "value": 22,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3931798951157933559,12328488554201320496,4474392666507991668",
         "serpapi_link": "https://serpapi.com/search.json?cites=3931798951157933559%2C12328488554201320496%2C4474392666507991668&engine=google_scholar&hl=en",
         "cites_id": "3931798951157933559,12328488554201320496,4474392666507991668"
@@ -322,20 +332,6 @@
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=765377178200408913",
         "serpapi_link": "https://serpapi.com/search.json?cites=765377178200408913&engine=google_scholar&hl=en",
         "cites_id": "765377178200408913"
-      },
-      "year": "2024"
-    },
-    {
-      "title": "Unveiling the spatial dynamics of climate impact on rice yield in India",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:2osOgNQ5qMEC",
-      "citation_id": "TKbYqt0AAAAJ:2osOgNQ5qMEC",
-      "authors": "S Mohapatra, L Wen, B Sharp, D Sahoo",
-      "publication": "Economic Analysis and Policy 83, 922-945, 2024",
-      "cited_by": {
-        "value": 9,
-        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4558674609862128957",
-        "serpapi_link": "https://serpapi.com/search.json?cites=4558674609862128957&engine=google_scholar&hl=en",
-        "cites_id": "4558674609862128957"
       },
       "year": "2024"
     }
