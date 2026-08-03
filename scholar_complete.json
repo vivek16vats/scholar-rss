@@ -38,7 +38,7 @@
       {
         "citations": {
           "all": 190,
-          "since_2021": 187
+          "since_2021": 186
         }
       },
       {
@@ -65,19 +65,19 @@
       },
       {
         "year": 2023,
-        "citations": 8
+        "citations": 7
       },
       {
         "year": 2024,
-        "citations": 27
+        "citations": 25
       },
       {
         "year": 2025,
-        "citations": 72
+        "citations": 71
       },
       {
         "year": 2026,
-        "citations": 75
+        "citations": 79
       }
     ]
   },
@@ -150,6 +150,28 @@
       "year": "2026"
     },
     {
+      "title": "Knowledge and Capacity Barriers to Circular Bioeconomy in Crop Waste Bioenergy Production: A Comparative MCDM Analysis",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:HDshCWvjkbEC",
+      "citation_id": "TKbYqt0AAAAJ:HDshCWvjkbEC",
+      "authors": "S Mishra, D Sahoo, S Mohapatra",
+      "publication": "Australian Journal of Agricultural and Resource Economics 70 (2), 334-351, 2026",
+      "cited_by": {
+        "value": null
+      },
+      "year": "2026"
+    },
+    {
+      "title": "Mapping barriers to agro-waste circularity: SLR-based WINGS analysis",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:IWHjjKOFINEC",
+      "citation_id": "TKbYqt0AAAAJ:IWHjjKOFINEC",
+      "authors": "S Mishra, D Sahoo, S Mohapatra, P Mohanty",
+      "publication": "Environmental Economics and Policy Studies 28 (2), 703-730, 2026",
+      "cited_by": {
+        "value": null
+      },
+      "year": "2026"
+    },
+    {
       "title": "Climate and land use dynamics in India’s livestock industry",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:R3hNpaxXUhUC",
       "citation_id": "TKbYqt0AAAAJ:R3hNpaxXUhUC",
@@ -164,17 +186,6 @@
       "year": "2026"
     },
     {
-      "title": "Mapping barriers to agro-waste circularity: SLR-based WINGS analysis",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:IWHjjKOFINEC",
-      "citation_id": "TKbYqt0AAAAJ:IWHjjKOFINEC",
-      "authors": "S Mishra, D Sahoo, S Mohapatra, P Mohanty",
-      "publication": "Environmental Economics and Policy Studies, 1-28, 2026",
-      "cited_by": {
-        "value": null
-      },
-      "year": "2026"
-    },
-    {
       "title": "Changing climate, mechanization, and gender wages in Indian agriculture",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:TQgYirikUcIC",
       "citation_id": "TKbYqt0AAAAJ:TQgYirikUcIC",
@@ -185,16 +196,6 @@
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=5657125108005647188",
         "serpapi_link": "https://serpapi.com/search.json?cites=5657125108005647188&engine=google_scholar&hl=en",
         "cites_id": "5657125108005647188"
-      },
-      "year": "2026"
-    },
-    {
-      "title": "Knowledge and Capacity Barriers to Circular Bioeconomy in Crop Waste Bioenergy Production: A Comparative MCDM Analysis",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:HDshCWvjkbEC",
-      "citation_id": "TKbYqt0AAAAJ:HDshCWvjkbEC",
-      "authors": "S Mishra, D Sahoo, S Mohapatra",
-      "cited_by": {
-        "value": null
       },
       "year": "2026"
     },
@@ -219,7 +220,7 @@
       "authors": "S Mishra, D Sahoo, S Mohapatra",
       "publication": "Circular Economy and Sustainability, 1-26, 2025",
       "cited_by": {
-        "value": 16,
+        "value": 17,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4317539887099863708",
         "serpapi_link": "https://serpapi.com/search.json?cites=4317539887099863708&engine=google_scholar&hl=en",
         "cites_id": "4317539887099863708"
@@ -234,9 +235,9 @@
       "publication": "Journal of Economics and Statistics, 2025",
       "cited_by": {
         "value": 6,
-        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16714895899479881106",
-        "serpapi_link": "https://serpapi.com/search.json?cites=16714895899479881106&engine=google_scholar&hl=en",
-        "cites_id": "16714895899479881106"
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1123090268565634534",
+        "serpapi_link": "https://serpapi.com/search.json?cites=1123090268565634534&engine=google_scholar&hl=en",
+        "cites_id": "1123090268565634534"
       },
       "year": "2025"
     },
@@ -262,9 +263,9 @@
       "publication": "Bio-Based and Applied Economics 14 (2), 31-49, 2025",
       "cited_by": {
         "value": 4,
-        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7891397444303179810",
-        "serpapi_link": "https://serpapi.com/search.json?cites=7891397444303179810&engine=google_scholar&hl=en",
-        "cites_id": "7891397444303179810"
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17834356362189693369",
+        "serpapi_link": "https://serpapi.com/search.json?cites=17834356362189693369&engine=google_scholar&hl=en",
+        "cites_id": "17834356362189693369"
       },
       "year": "2025"
     },
@@ -289,7 +290,7 @@
       "authors": "D Sahoo, P Mohanty, S Mishra, MK Behera, S Mohapatra",
       "publication": "Farming System 3 (1), 100124, 2025",
       "cited_by": {
-        "value": 22,
+        "value": 20,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3931798951157933559,12328488554201320496,4474392666507991668",
         "serpapi_link": "https://serpapi.com/search.json?cites=3931798951157933559%2C12328488554201320496%2C4474392666507991668&engine=google_scholar&hl=en",
         "cites_id": "3931798951157933559,12328488554201320496,4474392666507991668"
@@ -303,7 +304,10 @@
       "authors": "S Banerjee, S Mohapatra",
       "publication": "International Journal of Climate Change: Impacts and Responses 17 (1), 107-126, 2024",
       "cited_by": {
-        "value": null
+        "value": 2,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12499532681557431873",
+        "serpapi_link": "https://serpapi.com/search.json?cites=12499532681557431873&engine=google_scholar&hl=en",
+        "cites_id": "12499532681557431873"
       },
       "year": "2024"
     },
@@ -314,7 +318,7 @@
       "authors": "S Mishra, D Sahoo, S Mohapatra",
       "publication": "International Journal of Development Issues, 2024",
       "cited_by": {
-        "value": 27,
+        "value": 29,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=18329252979954060620",
         "serpapi_link": "https://serpapi.com/search.json?cites=18329252979954060620&engine=google_scholar&hl=en",
         "cites_id": "18329252979954060620"
