@@ -37,8 +37,8 @@
     "table": [
       {
         "citations": {
-          "all": 194,
-          "since_2021": 190
+          "all": 195,
+          "since_2021": 191
         }
       },
       {
@@ -77,7 +77,7 @@
       },
       {
         "year": 2026,
-        "citations": 83
+        "citations": 84
       }
     ]
   },
@@ -293,7 +293,7 @@
       "authors": "D Sahoo, P Mohanty, S Mishra, MK Behera, S Mohapatra",
       "publication": "Farming System 3 (1), 100124, 2025",
       "cited_by": {
-        "value": 20,
+        "value": 21,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3931798951157933559,12328488554201320496,4474392666507991668",
         "serpapi_link": "https://serpapi.com/search.json?cites=3931798951157933559%2C12328488554201320496%2C4474392666507991668&engine=google_scholar&hl=en",
         "cites_id": "3931798951157933559,12328488554201320496,4474392666507991668"
