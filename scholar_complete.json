@@ -1,7 +1,7 @@
 {
   "author": {
     "name": "Souryabrata Mohapatra",
-    "affiliations": "Assistant Professor, IIT Jodhpur",
+    "affiliations": "Department of Economics, IIT Jodhpur",
     "email": "Verified email at iitj.ac.in",
     "website": "https://sites.google.com/view/souryabrata",
     "interests": [
@@ -37,8 +37,8 @@
     "table": [
       {
         "citations": {
-          "all": 204,
-          "since_2021": 200
+          "all": 197,
+          "since_2021": 195
         }
       },
       {
@@ -50,43 +50,49 @@
       {
         "i10_index": {
           "all": 9,
-          "since_2021": 8
+          "since_2021": 9
         }
       }
     ],
     "graph": [
       {
-        "year": 2017,
-        "citations": 2
-      },
-      {
-        "year": 2021,
-        "citations": 2
-      },
-      {
         "year": 2023,
-        "citations": 7
+        "citations": 4
       },
       {
         "year": 2024,
-        "citations": 25
+        "citations": 24
       },
       {
         "year": 2025,
-        "citations": 71
+        "citations": 70
       },
       {
         "year": 2026,
-        "citations": 93
+        "citations": 95
       }
     ]
   },
   "total_articles": 20,
   "articles": [
     {
+      "title": "How does the energy transition shape inclusive green growth in the European Union?",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:k_IJM867U9cC",
+      "citation_id": "TKbYqt0AAAAJ:k_IJM867U9cC",
+      "authors": "A Paul, D Sahoo, S Mohapatra, MK Behera",
+      "publication": "Jahrbücher für Nationalökonomie und Statistik 246 (4), 285-331, 2026",
+      "cited_by": {
+        "value": 6,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1123090268565634534",
+        "serpapi_link": "https://serpapi.com/search.json?cites=1123090268565634534&engine=google_scholar&hl=en",
+        "cites_id": "1123090268565634534"
+      },
+      "year": "2026"
+    },
+    {
       "title": "Determinants of circular economy adoption in wastewater treatment plants",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:_Qo2XoVZTnwC",
-      "citation_id": "TKbYqt0AAAAJ:_Qo2XoVZTnwC",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:2P1L_qKh6hAC",
+      "citation_id": "TKbYqt0AAAAJ:2P1L_qKh6hAC",
       "authors": "S Mishra, D Sahoo, S Mohapatra",
       "publication": "Current Opinion in Environmental Sustainability 81, 101652, 2026",
       "cited_by": {
@@ -96,8 +102,8 @@
     },
     {
       "title": "Women’s empowerment and economic progress: a longitudinal study of India and China",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:r0BpntZqJG4C",
-      "citation_id": "TKbYqt0AAAAJ:r0BpntZqJG4C",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:NaGl4SEjCO4C",
+      "citation_id": "TKbYqt0AAAAJ:NaGl4SEjCO4C",
       "authors": "S Mishra, D Sahoo, S Mohapatra",
       "publication": "Review of Social Economy, 1-34, 2026",
       "cited_by": {
@@ -107,8 +113,8 @@
     },
     {
       "title": "Renewable Energy Transition and Inclusive Green Growth in EMDEs: Evidence From a CS‐ARDL Approach",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:j3f4tGmQtD8C",
-      "citation_id": "TKbYqt0AAAAJ:j3f4tGmQtD8C",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:O3NaXMp0MMsC",
+      "citation_id": "TKbYqt0AAAAJ:O3NaXMp0MMsC",
       "authors": "A Paul, D Sahoo, A Mitra, S Mohapatra",
       "publication": "Sustainable Development, 2026",
       "cited_by": {
@@ -118,8 +124,8 @@
     },
     {
       "title": "Does commercial farming protect the environment? Evidence from chemical input use in Haryana, India",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:ULOm3_A8WrAC",
-      "citation_id": "TKbYqt0AAAAJ:ULOm3_A8WrAC",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:RYcK_YlVTxYC",
+      "citation_id": "TKbYqt0AAAAJ:RYcK_YlVTxYC",
       "authors": "S Verma, KR Paltasingh, S Mohapatra",
       "publication": "Journal of Agribusiness in Developing and Emerging Economies 16 (4), 894-909, 2026",
       "cited_by": {
@@ -129,8 +135,8 @@
     },
     {
       "title": "Determinants of crop diversification and the role of agricultural technology and institutional enablers in millet-based tribal farming systems",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:4JMBOYKVnBMC",
-      "citation_id": "TKbYqt0AAAAJ:4JMBOYKVnBMC",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:RGFaLdJalmkC",
+      "citation_id": "TKbYqt0AAAAJ:RGFaLdJalmkC",
       "authors": "P Tandi, NR Jena, D Sahoo, S Mohapatra",
       "publication": "Discover Environment 4 (1), 208, 2026",
       "cited_by": {
@@ -143,10 +149,10 @@
     },
     {
       "title": "Climate Change and Indian Crop Yields: Impacts and Projections",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:RHpTSmoSYBkC",
-      "citation_id": "TKbYqt0AAAAJ:RHpTSmoSYBkC",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:rO6llkc54NcC",
+      "citation_id": "TKbYqt0AAAAJ:rO6llkc54NcC",
       "authors": "A Mitra, S Mohapatra, S Mondal, SB Chaudhury, S Pohit",
-      "publication": "Margin: The Journal of Applied Economic Research, 2026",
+      "publication": "Margin: The Journal of Applied Economic Research 20 (1), 7-63, 2026",
       "cited_by": {
         "value": 2,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6769284419732307418",
@@ -156,20 +162,9 @@
       "year": "2026"
     },
     {
-      "title": "Knowledge and Capacity Barriers to Circular Bioeconomy in Crop Waste Bioenergy Production: A Comparative MCDM Analysis",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:HDshCWvjkbEC",
-      "citation_id": "TKbYqt0AAAAJ:HDshCWvjkbEC",
-      "authors": "S Mishra, D Sahoo, S Mohapatra",
-      "publication": "Australian Journal of Agricultural and Resource Economics 70 (2), 334-351, 2026",
-      "cited_by": {
-        "value": null
-      },
-      "year": "2026"
-    },
-    {
       "title": "Mapping barriers to agro-waste circularity: SLR-based WINGS analysis",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:IWHjjKOFINEC",
-      "citation_id": "TKbYqt0AAAAJ:IWHjjKOFINEC",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:lSLTfruPkqcC",
+      "citation_id": "TKbYqt0AAAAJ:lSLTfruPkqcC",
       "authors": "S Mishra, D Sahoo, S Mohapatra, P Mohanty",
       "publication": "Environmental Economics and Policy Studies 28 (2), 703-730, 2026",
       "cited_by": {
@@ -178,9 +173,20 @@
       "year": "2026"
     },
     {
+      "title": "Knowledge and Capacity Barriers to Circular Bioeconomy in Crop Waste Bioenergy Production: A Comparative MCDM Analysis",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:maZDTaKrznsC",
+      "citation_id": "TKbYqt0AAAAJ:maZDTaKrznsC",
+      "authors": "S Mishra, D Sahoo, S Mohapatra",
+      "publication": "Australian Journal of Agricultural and Resource Economics 70 (2), 334-351, 2026",
+      "cited_by": {
+        "value": null
+      },
+      "year": "2026"
+    },
+    {
       "title": "Climate and land use dynamics in India’s livestock industry",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:R3hNpaxXUhUC",
-      "citation_id": "TKbYqt0AAAAJ:R3hNpaxXUhUC",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:ZHo1McVdvXMC",
+      "citation_id": "TKbYqt0AAAAJ:ZHo1McVdvXMC",
       "authors": "S Mohapatra, D Sahoo, KR Paltasingh",
       "publication": "China Agricultural Economic Review, 1-20, 2026",
       "cited_by": {
@@ -193,10 +199,10 @@
     },
     {
       "title": "Changing climate, mechanization, and gender wages in Indian agriculture",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:TQgYirikUcIC",
-      "citation_id": "TKbYqt0AAAAJ:TQgYirikUcIC",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:YFjsv_pBGBYC",
+      "citation_id": "TKbYqt0AAAAJ:YFjsv_pBGBYC",
       "authors": "S Mohapatra, KR Paltasingh, D Sahoo, P Mohanty",
-      "publication": "Transforming smallholder agriculture through mechanisation in Asia 2, 110-135, 2026",
+      "publication": "Transforming smallholder agriculture through mechanisation in Asia 2, 2026",
       "cited_by": {
         "value": 1,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=5657125108005647188",
@@ -207,8 +213,8 @@
     },
     {
       "title": "Do energy risks drive the renewable transition in the Asia-Pacific? Insights from the method of moments quantile regression",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:ZeXyd9-uunAC",
-      "citation_id": "TKbYqt0AAAAJ:ZeXyd9-uunAC",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:pqnbT2bcN3wC",
+      "citation_id": "TKbYqt0AAAAJ:pqnbT2bcN3wC",
       "authors": "A Paul, MK Behera, D Sahoo, S Mohapatra",
       "publication": "Journal of the Asia Pacific Economy, 1-36, 2025",
       "cited_by": {
@@ -221,10 +227,10 @@
     },
     {
       "title": "Barriers to circular economy adoption in MSMEs: a WINGS analysis of challenges in developing economies",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:4DMP91E08xMC",
-      "citation_id": "TKbYqt0AAAAJ:4DMP91E08xMC",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:hMod-77fHWUC",
+      "citation_id": "TKbYqt0AAAAJ:hMod-77fHWUC",
       "authors": "S Mishra, D Sahoo, S Mohapatra",
-      "publication": "Circular Economy and Sustainability, 1-26, 2025",
+      "publication": "Circular Economy and Sustainability 5 (6), 4919-4944, 2025",
       "cited_by": {
         "value": 21,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4317539887099863708",
@@ -234,27 +240,13 @@
       "year": "2025"
     },
     {
-      "title": "How does the energy transition shape inclusive green growth in the European Union?",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:Wp0gIr-vW9MC",
-      "citation_id": "TKbYqt0AAAAJ:Wp0gIr-vW9MC",
-      "authors": "A Paul, D Sahoo, S Mohapatra, MK Behera",
-      "publication": "Journal of Economics and Statistics, 2025",
-      "cited_by": {
-        "value": 6,
-        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1123090268565634534",
-        "serpapi_link": "https://serpapi.com/search.json?cites=1123090268565634534&engine=google_scholar&hl=en",
-        "cites_id": "1123090268565634534"
-      },
-      "year": "2025"
-    },
-    {
-      "title": "Evaluating seasonal weather risks on cereal yield distributions in southern India",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:Se3iqnhoufwC",
-      "citation_id": "TKbYqt0AAAAJ:Se3iqnhoufwC",
+      "title": "Evaluating seasonal weather risks on cereal yield distributions in Southern India",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:35N4QoGY0k4C",
+      "citation_id": "TKbYqt0AAAAJ:35N4QoGY0k4C",
       "authors": "S Mohapatra, KR Paltasingh, D Peddi, D Sahoo, AK Sahoo, P Mohanty",
-      "publication": "Journal of Quantitative Economics 23, 785-845, 2025",
+      "publication": "Journal of Quantitative Economics 23 (3), 785-845, 2025",
       "cited_by": {
-        "value": 7,
+        "value": 8,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12127399452430852525",
         "serpapi_link": "https://serpapi.com/search.json?cites=12127399452430852525&engine=google_scholar&hl=en",
         "cites_id": "12127399452430852525"
@@ -262,11 +254,11 @@
       "year": "2025"
     },
     {
-      "title": "Impact of weather variability on crop yields and land use dynamics in Odisha, India: Short-and long-term effects",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:M3ejUd6NZC8C",
-      "citation_id": "TKbYqt0AAAAJ:M3ejUd6NZC8C",
+      "title": "Impact of weather variability on crop yields and land use dynamics in Eastern India: Short-and long-term effects",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:SeFeTyx0c_EC",
+      "citation_id": "TKbYqt0AAAAJ:SeFeTyx0c_EC",
       "authors": "PK Jena, KR Paltasingh, S Mohapatra, A Mishra",
-      "publication": "Bio-Based and Applied Economics 14 (2), 31-49, 2025",
+      "publication": "Bio-based and Applied Economics 14 (2), 31-49, 2025",
       "cited_by": {
         "value": 4,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17834356362189693369",
@@ -277,10 +269,10 @@
     },
     {
       "title": "The water paradox in India: Managing abundance amid growing scarcity",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:4TOpqqG69KYC",
-      "citation_id": "TKbYqt0AAAAJ:4TOpqqG69KYC",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:ns9cj8rnVeAC",
+      "citation_id": "TKbYqt0AAAAJ:ns9cj8rnVeAC",
       "authors": "S Mohapatra, A Mitra, S Pohit",
-      "publication": "NCAER Working Paper 182, 2025",
+      "publication": "NCAER Working Papers, 2025",
       "cited_by": {
         "value": 2,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7203661555797690426",
@@ -290,9 +282,37 @@
       "year": "2025"
     },
     {
+      "title": "Climate Change Induced Migration in Marine Fishing Community in Odisha [Master’s thesis]",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:blknAaTinKkC",
+      "citation_id": "TKbYqt0AAAAJ:blknAaTinKkC",
+      "authors": "S Mohapatra",
+      "publication": "University of Auckland Research Repository, 2025",
+      "cited_by": {
+        "value": 1,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4051139410340739291",
+        "serpapi_link": "https://serpapi.com/search.json?cites=4051139410340739291&engine=google_scholar&hl=en",
+        "cites_id": "4051139410340739291"
+      },
+      "year": "2025"
+    },
+    {
+      "title": "Impact of Climate Change on Indian Agriculture [Doctoral dissertation]",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:M3NEmzRMIkIC",
+      "citation_id": "TKbYqt0AAAAJ:M3NEmzRMIkIC",
+      "authors": "S Mohapatra",
+      "publication": "University of Auckland Research Repository, 2025",
+      "cited_by": {
+        "value": 1,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3593341873096715431",
+        "serpapi_link": "https://serpapi.com/search.json?cites=3593341873096715431&engine=google_scholar&hl=en",
+        "cites_id": "3593341873096715431"
+      },
+      "year": "2025"
+    },
+    {
       "title": "Does climate-smart agriculture technology improve farmers' subjective well-being? Micro-level evidence from Odisha, India",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:d1gkVwhDpl0C",
-      "citation_id": "TKbYqt0AAAAJ:d1gkVwhDpl0C",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:JV2RwH3_ST0C",
+      "citation_id": "TKbYqt0AAAAJ:JV2RwH3_ST0C",
       "authors": "D Sahoo, P Mohanty, S Mishra, MK Behera, S Mohapatra",
       "publication": "Farming System 3 (1), 100124, 2025",
       "cited_by": {
@@ -304,23 +324,9 @@
       "year": "2025"
     },
     {
-      "title": "Do adaptation interventions reduce vulnerability and disaster risk and strengthen socio-ecological resilience? Lessons from coastal Odisha, India",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:LkGwnXOMwfcC",
-      "citation_id": "TKbYqt0AAAAJ:LkGwnXOMwfcC",
-      "authors": "S Banerjee, S Mohapatra",
-      "publication": "International Journal of Climate Change: Impacts and Responses 17 (1), 107-126, 2024",
-      "cited_by": {
-        "value": 2,
-        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12499532681557431873",
-        "serpapi_link": "https://serpapi.com/search.json?cites=12499532681557431873&engine=google_scholar&hl=en",
-        "cites_id": "12499532681557431873"
-      },
-      "year": "2024"
-    },
-    {
       "title": "Circular economy adoption in MSMEs: unveiling enablers and barriers",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:qUcmZB5y_30C",
-      "citation_id": "TKbYqt0AAAAJ:qUcmZB5y_30C",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:3s1wT3WcHBgC",
+      "citation_id": "TKbYqt0AAAAJ:3s1wT3WcHBgC",
       "authors": "S Mishra, D Sahoo, S Mohapatra",
       "publication": "International Journal of Development Issues, 2024",
       "cited_by": {
@@ -328,20 +334,6 @@
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=18329252979954060620",
         "serpapi_link": "https://serpapi.com/search.json?cites=18329252979954060620&engine=google_scholar&hl=en",
         "cites_id": "18329252979954060620"
-      },
-      "year": "2024"
-    },
-    {
-      "title": "Mapping the intellectual structure and trends in subjective well-being and climate change in agriculture: A biblio-thematic analysis",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:-f6ydRqryjwC",
-      "citation_id": "TKbYqt0AAAAJ:-f6ydRqryjwC",
-      "authors": "D Sahoo, J Lokesh Kumar, S Mohapatra",
-      "publication": "Proceedings of the 7th Symposium on Agri-Tech Economics for Sustainable …, 2024",
-      "cited_by": {
-        "value": 1,
-        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=765377178200408913",
-        "serpapi_link": "https://serpapi.com/search.json?cites=765377178200408913&engine=google_scholar&hl=en",
-        "cites_id": "765377178200408913"
       },
       "year": "2024"
     }
