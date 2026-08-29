@@ -37,8 +37,8 @@
     "table": [
       {
         "citations": {
-          "all": 200,
-          "since_2021": 198
+          "all": 205,
+          "since_2021": 203
         }
       },
       {
@@ -69,7 +69,7 @@
       },
       {
         "year": 2026,
-        "citations": 98
+        "citations": 103
       }
     ]
   },
@@ -218,7 +218,7 @@
       "authors": "A Paul, MK Behera, D Sahoo, S Mohapatra",
       "publication": "Journal of the Asia Pacific Economy, 1-36, 2025",
       "cited_by": {
-        "value": 1,
+        "value": 2,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15363612285326798620",
         "serpapi_link": "https://serpapi.com/search.json?cites=15363612285326798620&engine=google_scholar&hl=en",
         "cites_id": "15363612285326798620"
@@ -232,7 +232,7 @@
       "authors": "S Mishra, D Sahoo, S Mohapatra",
       "publication": "Circular Economy and Sustainability 5 (6), 4919-4944, 2025",
       "cited_by": {
-        "value": 21,
+        "value": 23,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4317539887099863708",
         "serpapi_link": "https://serpapi.com/search.json?cites=4317539887099863708&engine=google_scholar&hl=en",
         "cites_id": "4317539887099863708"
@@ -260,7 +260,7 @@
       "authors": "PK Jena, KR Paltasingh, S Mohapatra, A Mishra",
       "publication": "Bio-based and Applied Economics 14 (2), 31-49, 2025",
       "cited_by": {
-        "value": 4,
+        "value": 5,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17834356362189693369",
         "serpapi_link": "https://serpapi.com/search.json?cites=17834356362189693369&engine=google_scholar&hl=en",
         "cites_id": "17834356362189693369"
