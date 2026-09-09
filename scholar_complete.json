@@ -37,8 +37,8 @@
     "table": [
       {
         "citations": {
-          "all": 207,
-          "since_2021": 205
+          "all": 208,
+          "since_2021": 206
         }
       },
       {
@@ -69,7 +69,7 @@
       },
       {
         "year": 2026,
-        "citations": 105
+        "citations": 106
       }
     ]
   },
@@ -232,7 +232,7 @@
       "authors": "S Mishra, D Sahoo, S Mohapatra",
       "publication": "Circular Economy and Sustainability 5 (6), 4919-4944, 2025",
       "cited_by": {
-        "value": 24,
+        "value": 25,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4317539887099863708",
         "serpapi_link": "https://serpapi.com/search.json?cites=4317539887099863708&engine=google_scholar&hl=en",
         "cites_id": "4317539887099863708"
