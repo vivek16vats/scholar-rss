@@ -37,8 +37,8 @@
     "table": [
       {
         "citations": {
-          "all": 208,
-          "since_2021": 206
+          "all": 210,
+          "since_2021": 208
         }
       },
       {
@@ -69,12 +69,23 @@
       },
       {
         "year": 2026,
-        "citations": 106
+        "citations": 108
       }
     ]
   },
   "total_articles": 20,
   "articles": [
+    {
+      "title": "Mapping the millet value chain: A systematic and bibliometric review",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:yD5IFk8b50cC",
+      "citation_id": "TKbYqt0AAAAJ:yD5IFk8b50cC",
+      "authors": "P Tandi, NR Jena, D Sahoo, S Mohapatra",
+      "publication": "SN Business & Economics 6 (10), 373, 2026",
+      "cited_by": {
+        "value": null
+      },
+      "year": "2026"
+    },
     {
       "title": "How does the energy transition shape inclusive green growth in the European Union?",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:k_IJM867U9cC",
@@ -96,7 +107,10 @@
       "authors": "S Mishra, D Sahoo, S Mohapatra",
       "publication": "Current Opinion in Environmental Sustainability 81, 101652, 2026",
       "cited_by": {
-        "value": null
+        "value": 1,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12594977977188689208",
+        "serpapi_link": "https://serpapi.com/search.json?cites=12594977977188689208&engine=google_scholar&hl=en",
+        "cites_id": "12594977977188689208"
       },
       "year": "2026"
     },
@@ -140,7 +154,7 @@
       "authors": "P Tandi, NR Jena, D Sahoo, S Mohapatra",
       "publication": "Discover Environment 4 (1), 208, 2026",
       "cited_by": {
-        "value": 1,
+        "value": 2,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=9034338353118533094",
         "serpapi_link": "https://serpapi.com/search.json?cites=9034338353118533094&engine=google_scholar&hl=en",
         "cites_id": "9034338353118533094"
@@ -322,20 +336,6 @@
         "cites_id": "3931798951157933559,12328488554201320496,4474392666507991668"
       },
       "year": "2025"
-    },
-    {
-      "title": "Circular economy adoption in MSMEs: unveiling enablers and barriers",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:3s1wT3WcHBgC",
-      "citation_id": "TKbYqt0AAAAJ:3s1wT3WcHBgC",
-      "authors": "S Mishra, D Sahoo, S Mohapatra",
-      "publication": "International Journal of Development Issues, 2024",
-      "cited_by": {
-        "value": 33,
-        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=18329252979954060620",
-        "serpapi_link": "https://serpapi.com/search.json?cites=18329252979954060620&engine=google_scholar&hl=en",
-        "cites_id": "18329252979954060620"
-      },
-      "year": "2024"
     }
   ]
 }
