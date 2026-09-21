@@ -5,15 +5,18 @@ html {
 }
 
 body {
-  font-family: "Lora", serif;
+  font-family: "Lato", sans-serif;
   max-width: 100%;
   width: auto;
   margin: 0 auto;
   padding: 8px 16px;
-  color: #000000;
+  color: rgba(33, 33, 33, 1);
   background: #ffffff;
   overflow-x: hidden;
   box-sizing: border-box;
+  font-size: 11pt;
+  font-weight: 400;
+  line-height: 1.6667;
 }
 
 *,
@@ -29,10 +32,12 @@ body {
 }
 
 .pub-title {
-  font-size: 20px;
+  font-size: 19pt;
   margin: 0 0 14px;
-  color: #0000ff;
+  color: rgba(55, 71, 79, 1);
   font-weight: 400;
+  line-height: 1.4;
+  font-family: "Lato", sans-serif;
 }
 
 .profile {
@@ -210,13 +215,14 @@ body {
 }
 
 .carousel-card-title a {
-  color: #0000cc;
+  color: rgba(33, 33, 33, 1);
   text-decoration: none;
-  font-size: 14px;
+  font-size: 13pt;
   font-weight: 500;
-  line-height: 1.4;
+  line-height: 1.35;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  font-family: "Lato", sans-serif;
 }
 
 .carousel-card-title a:hover {
@@ -224,12 +230,13 @@ body {
 }
 
 .carousel-card-authors {
-  color: #212121;
-  font-size: 13px;
+  color: rgba(55, 71, 79, 1);
+  font-size: 10.5pt;
   line-height: 1.5;
   word-wrap: break-word;
   font-weight: 400;
   overflow-wrap: break-word;
+  font-family: "Lato", sans-serif;
 }
 
 .carousel-card-links {
