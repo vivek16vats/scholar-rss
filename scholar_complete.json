@@ -76,6 +76,17 @@
   "total_articles": 20,
   "articles": [
     {
+      "title": "Dis (em) Powering Women in a Globalised World: Mapping Evidence from a PRISMA-Based Systematic Literature Review",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:a0OBvERweLwC",
+      "citation_id": "TKbYqt0AAAAJ:a0OBvERweLwC",
+      "authors": "S Mishra, D Sahoo, S Mohapatra",
+      "publication": "Global Society, 1-31, 2026",
+      "cited_by": {
+        "value": null
+      },
+      "year": "2026"
+    },
+    {
       "title": "Mapping the millet value chain: A systematic and bibliometric review",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:yD5IFk8b50cC",
       "citation_id": "TKbYqt0AAAAJ:yD5IFk8b50cC",
@@ -320,20 +331,6 @@
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3593341873096715431",
         "serpapi_link": "https://serpapi.com/search.json?cites=3593341873096715431&engine=google_scholar&hl=en",
         "cites_id": "3593341873096715431"
-      },
-      "year": "2025"
-    },
-    {
-      "title": "Does climate-smart agriculture technology improve farmers' subjective well-being? Micro-level evidence from Odisha, India",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TKbYqt0AAAAJ&sortby=pubdate&citation_for_view=TKbYqt0AAAAJ:JV2RwH3_ST0C",
-      "citation_id": "TKbYqt0AAAAJ:JV2RwH3_ST0C",
-      "authors": "D Sahoo, P Mohanty, S Mishra, MK Behera, S Mohapatra",
-      "publication": "Farming System 3 (1), 100124, 2025",
-      "cited_by": {
-        "value": 21,
-        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3931798951157933559,12328488554201320496,4474392666507991668",
-        "serpapi_link": "https://serpapi.com/search.json?cites=3931798951157933559%2C12328488554201320496%2C4474392666507991668&engine=google_scholar&hl=en",
-        "cites_id": "3931798951157933559,12328488554201320496,4474392666507991668"
       },
       "year": "2025"
     }
