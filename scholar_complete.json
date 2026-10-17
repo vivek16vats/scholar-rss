@@ -37,20 +37,20 @@
     "table": [
       {
         "citations": {
-          "all": 221,
-          "since_2021": 219
+          "all": 223,
+          "since_2021": 221
         }
       },
       {
         "h_index": {
-          "all": 9,
-          "since_2021": 9
+          "all": 10,
+          "since_2021": 10
         }
       },
       {
         "i10_index": {
-          "all": 9,
-          "since_2021": 9
+          "all": 10,
+          "since_2021": 10
         }
       }
     ],
@@ -69,7 +69,7 @@
       },
       {
         "year": 2026,
-        "citations": 118
+        "citations": 120
       }
     ]
   },
@@ -271,7 +271,7 @@
       "authors": "S Mohapatra, KR Paltasingh, D Peddi, D Sahoo, AK Sahoo, P Mohanty",
       "publication": "Journal of Quantitative Economics 23 (3), 785-845, 2025",
       "cited_by": {
-        "value": 9,
+        "value": 10,
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12127399452430852525",
         "serpapi_link": "https://serpapi.com/search.json?cites=12127399452430852525&engine=google_scholar&hl=en",
         "cites_id": "12127399452430852525"
