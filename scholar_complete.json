@@ -37,8 +37,8 @@
     "table": [
       {
         "citations": {
-          "all": 226,
-          "since_2021": 224
+          "all": 227,
+          "since_2021": 225
         }
       },
       {
@@ -69,7 +69,7 @@
       },
       {
         "year": 2026,
-        "citations": 123
+        "citations": 124
       }
     ]
   },
@@ -154,7 +154,10 @@
       "authors": "S Verma, KR Paltasingh, S Mohapatra",
       "publication": "Journal of Agribusiness in Developing and Emerging Economies 16 (4), 894-909, 2026",
       "cited_by": {
-        "value": null
+        "value": 1,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11059016400870432077",
+        "serpapi_link": "https://serpapi.com/search.json?cites=11059016400870432077&engine=google_scholar&hl=en",
+        "cites_id": "11059016400870432077"
       },
       "year": "2026"
     },
